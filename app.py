@@ -35,7 +35,7 @@ else:
     st.image('teste.svg', width=400) 
     st.title('Conciliações dos Impostos')
     ("""**`Competência: 09/2025`** """)
-    st.write('💜 💜:purple_heart: 💜💜💜💜💜💜💜💜')
+    
 
     st.markdown("""
     ## Seja bem vindo(a)
@@ -58,4 +58,5 @@ O objetivo é oferecer uma visão clara e organizada para apoiar:
 > **Objetivo:** Garantir o alinhamento entre os saldos fiscais e contábeis, prevenindo divergências nos registros.              
  
 """)
+
 
