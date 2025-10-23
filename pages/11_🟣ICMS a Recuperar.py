@@ -4,7 +4,7 @@ import io
 
 
 # Configuração da página
-st.set_page_config(page_title="ICMS Recuperar", page_icon="🟣")
+st.set_page_config(page_title="ICMS recuperar", page_icon="🟣")
 
 
 # Cabeçalho
@@ -71,6 +71,7 @@ def to_excel(df1, df2, df_razao, df_fiscal):
         df_razao.to_excel(writer, index=False, sheet_name='Razão')
         df_fiscal.to_excel(writer, index=False, sheet_name='Fiscal')
     return output.getvalue()
+
 
 
 
