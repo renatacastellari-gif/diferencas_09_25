@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 from io import BytesIO
 
+st.image('teste.svg', width=200) 
 # Título principal
 st.markdown("<h4>📌 Lançamento Manuais - Contabilidade </h4>", unsafe_allow_html=True)
 
@@ -74,4 +75,5 @@ st.download_button(
     data=excel_file,
     file_name="lancamentos_contabilidade.xlsx",
     mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+
 )
