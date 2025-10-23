@@ -43,7 +43,7 @@ else:
 Esta aplicação apresenta as **demonstrações das conciliações entre os saldos fiscais e contábeis (Razão)**, destacando as **diferenças identificadas** e seus respectivos detalhes.
 
 O objetivo é oferecer uma visão clara e organizada para apoiar:
-- **Apuração dos impostos** (ICMS, PIS, COFINS, etc.)
+- **Apuração dos impostos** (ICMS, IPI, PIS, COFINS)
 - **Validação dos lançamentos contábeis**
 - **Identificação de ajustes necessários**
 
@@ -58,3 +58,4 @@ O objetivo é oferecer uma visão clara e organizada para apoiar:
 > **Objetivo:** Garantir o alinhamento entre os saldos fiscais e contábeis, prevenindo divergências nos registros.              
  
 """)
+
