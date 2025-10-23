@@ -8,6 +8,8 @@ st.set_page_config(
 st.image('teste.svg', width=300)
 st.title('Faturamento')
 
+("""**`Vendas - 4000000`** """)
+
 st.markdown("""
 
 Esta página apresenta as **demonstrações das conciliações entre o Livro Fiscal e o Razão Contábil**
@@ -30,3 +32,4 @@ As seguintes notas fiscais foram **removidas de agosto** e **incluídas em setem
 
 > **Objetivo:** Garantir que os saldos fiscais e contábeis estejam alinhados.
 """)
+
