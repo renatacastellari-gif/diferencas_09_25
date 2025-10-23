@@ -20,6 +20,7 @@ Esta página apresenta as **demonstrações das conciliações entre o IPI e o R
 # Espaço
 st.write("")
 st.markdown("<h4>🔍 Diferença Identificada: Pagamento</h4>", unsafe_allow_html=True)
+st.markdown("**`Competência: 08/2025, Pagamento: 09/2025`**")
 
 # ✅ NOVA SEÇÃO
 st.markdown("<h6>Diferença no valor pago versus a apuração fiscal e livro fiscal</h6>", unsafe_allow_html=True)
@@ -121,4 +122,5 @@ st.markdown(custom_css + html_table, unsafe_allow_html=True)
 
 # Totalizador
 total_ipi = df["VLR_IPI"].sum(skipna=True)
+
 st.markdown(f"<p style='font-size:13px;'>💰 Valor total IPI: <b>R$ {total_ipi:.2f}</b></p>", unsafe_allow_html=True)
