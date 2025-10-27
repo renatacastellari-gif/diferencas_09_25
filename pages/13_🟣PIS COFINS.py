@@ -179,7 +179,7 @@ st.markdown("""
 """)
 
 st.write("")
-st.write("")
+
 st.markdown("---")
 # Texto explicativo em Markdown
 st.markdown("""
@@ -215,6 +215,7 @@ df = pd.DataFrame(data)
 st.subheader("📊 Devoluções com valor fiscal sem razão")
 st.dataframe(df.style.format(precision=2))
 	
+
 
 
 
