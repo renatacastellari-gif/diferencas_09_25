@@ -55,7 +55,7 @@ def highlight_dif(val):
     return 'background-color: #9b59b6; color: white;' if val > 0 else ''
 
 # Exibir no Streamlit
-st.subheader("📊 Diferença de Alíquota ICMS (Razão vs Apuração)")
+st.subheader("📊 Diferença de Tributação (Razão vs Apuração)")
 st.dataframe(df.style.format(precision=2).applymap(highlight_dif, subset=['Dif_Alíquota']))
 
 
@@ -163,7 +163,7 @@ for key in data:
 df = pd.DataFrame(data)
 
 # Exibir tabela formatada (sem roxo)
-st.subheader("📊 Tabela de COFINS por Nota Fiscal")
+st.subheader("📊 Valor Fiscal")
 st.dataframe(df.style.format(precision=2))
 
 st.write("")
@@ -212,6 +212,7 @@ df = pd.DataFrame(data)
 st.subheader("📊 Devoluções com valor fiscal sem razão")
 st.dataframe(df.style.format(precision=2))
 	
+
 
 
 
