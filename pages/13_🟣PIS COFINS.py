@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import io
+from io import BytesIO
 
 
 # Configuração da página
@@ -65,6 +66,7 @@ excel_buffer = BytesIO()
 with pd.ExcelWriter(excel_buffer, engine='openpyxl') as writer:
     filtered_df.to_excel(writer, index=False, sheet_name="Filtrado")
 st.download_button("Download Excel", data=excel_buffer.getvalue(), file_name="dados_filtrados.xlsx", mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+
 
 
 
