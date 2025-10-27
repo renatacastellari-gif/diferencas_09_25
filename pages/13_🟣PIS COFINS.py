@@ -118,7 +118,7 @@ st.write("")
 
 # Texto explicativo em Markdown
 st.markdown("""
-⚠️ 77 Notas com valor fiscal sem razão**
+⚠️ 77 Notas com valor fiscal sem razão
 - **Razão (Nota Fiscal):** Sem tributação
 - **Apuração:** Tributado 
 """)
@@ -174,6 +174,7 @@ def highlight_high(val):
 # Exibir no Streamlit
 st.subheader("📊 Valores de COFINS por NF")
 st.dataframe(df.style.format(precision=2).applymap(highlight_high, subset=['VLR_COFINS']))
+
 
 
 
