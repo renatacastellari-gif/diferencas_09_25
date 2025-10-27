@@ -162,10 +162,7 @@ for key in data:
 # Criar DataFrame
 df = pd.DataFrame(data)
 
-# Função para destacar valores altos
-def highlight_high(val):
-    return 'background-color: #9b59b6; color: white;' if val > 100 else ''
+# Exibir tabela formatada (sem roxo)
+st.subheader("📊 Tabela de COFINS por Nota Fiscal")
+st.dataframe(df.style.format(precision=2))
 
-# Exibir tabela estilizada
-st.subheader("📊 Valor Fiscal")
-st.dataframe(df.style.format(precision=2).applymap(highlight_high, subset=['VLR_COFINS']))
