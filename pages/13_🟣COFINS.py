@@ -19,7 +19,7 @@ Esta página apresenta as demonstrações das conciliações do COFINS a recolhe
 
 ### 📌 Origem dos Dados
 - Fonte Fiscal: Apuração Fiscal
-- Fonte Contábil: Conta 23000394 do razão extraída do SAP
+- Fonte Contábil: Conta 2300394 do razão extraída do SAP
 """)
 st.write("")
 st.write("")
@@ -248,6 +248,7 @@ st.dataframe(df_comparativo.style.format({"Valor (R$)": "{:,.2f}"}))
 st.markdown("---")
 
 st.image("Screenshot_3.png", width=1600)
+
 
 
 
