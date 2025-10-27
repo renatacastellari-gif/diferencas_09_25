@@ -217,9 +217,9 @@ st.dataframe(df.style.format(precision=2))
 
 # ADD
 
+st.markdown("---")
 
-
-st.title("📊 Conciliação PIS/COFINS")
+st.title("Informações")
 
 # Texto explicativo
 st.markdown("""
@@ -227,7 +227,7 @@ A base de cálculo considerada nas notas fiscais corresponde ao valor dos produt
 **sem dedução do ICMS destacado**, diferentemente do critério adotado na apuração fiscal, que considera o abatimento do ICMS.
 """)
 
-st.markdown("---")
+
 
 # Seção 1: Comparativo Apuração vs Razão
 st.markdown("### ✅ Comparativo Apuração vs Razão")
@@ -246,3 +246,4 @@ df_comparativo = pd.DataFrame(dados_comparativo)
 st.dataframe(df_comparativo.style.format({"Valor (R$)": "{:,.2f}"}))
 
 st.markdown("---")
+
