@@ -14,6 +14,14 @@ st.image('teste.svg', width=300)
 st.title('COFINS')
 ("""**`COFINS a Recolher - 2300394`** """)
 
+st.markdown("""
+### ⚠️ Diferença no Item **BASE LIQ FACIAL UP FPS 15 SOFT HONEY**
+- **Razão (Nota Fiscal):** Tributando em **7,60%**
+- **Apuração:** Tributando em **10,30%**
+""")
+	
+
+
 # Dados extraídos da tabela fornecida
 data = {
     "referencia": ["000059786-018","000079835-016","000080293-016","000114108-010","000129528-015","000155650-009","000245555-004","000246215-004","000389947-005"],
@@ -40,5 +48,6 @@ def highlight_dif(val):
 # Exibir no Streamlit
 st.subheader("📊 Diferença de Alíquota ICMS (Razão vs Apuração)")
 st.dataframe(df.style.format(precision=2).applymap(highlight_dif, subset=['Dif_Alíquota']))
+
 
 
