@@ -219,7 +219,7 @@ st.dataframe(df.style.format(precision=2))
 
 st.markdown("---")
 
-("""**`RESUMO`** """)
+st.markdown("<h2 style='font-size:32px;'>Resumo</h2>", unsafe_allow_html=True)
 
 # Texto explicativo
 st.markdown("""
@@ -246,5 +246,6 @@ df_comparativo = pd.DataFrame(dados_comparativo)
 st.dataframe(df_comparativo.style.format({"Valor (R$)": "{:,.2f}"}))
 
 st.markdown("---")
+
 
 
