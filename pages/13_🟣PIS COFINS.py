@@ -96,8 +96,9 @@ def highlight_dif(val):
     return 'background-color: #9b59b6; color: white;' if val > 0 else ''
 
 # Exibir no Streamlit
-st.subheader("📊 Diferença de Alíquota ICMS (Razão vs Apuração)")
+st.subheader("📊 Diferença de YTributação (Razão vs Apuração)")
 st.dataframe(df.style.format(precision=2).applymap(highlight_dif, subset=['Dif_Alíquota']))
+
 
 
 
