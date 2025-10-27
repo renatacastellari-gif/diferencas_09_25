@@ -123,6 +123,9 @@ st.markdown("""
 - **Apuração:** Tributado 
 """)
 
+import pandas as pd
+import streamlit as st
+
 # Dados extraídos da tabela
 data = {
     "VLR_COFINS": [
@@ -167,15 +170,7 @@ data = {
 # Criar DataFrame
 df = pd.DataFrame(data)
 
-# Função para destacar valores altos de COFINS
-def highlight_high(val):
-    return 'background-color: #9b59b6; color: white;' if val > 100 else ''
-
-# Exibir no Streamlit
-st.subheader("📊 Valores de COFINS por NF")
-st.dataframe(df.style.format(precision=2).applymap(highlight_high, subset=['VLR_COFINS']))
-
-
-
-
+# Exibir tabela no Streamlit
+st.subheader("📊 Tabela de COFINS por Nota Fiscal")
+st.dataframe(df)
 
