@@ -223,8 +223,8 @@ st.markdown("<p style='font-size:28px; font-weight:bold; color:#FFA500;'>Resumo<
 
 # Texto explicativo
 st.markdown("""
-A base de cálculo considerada nas notas fiscais corresponde ao valor dos produtos + frete,
-**sem dedução do ICMS destacado**, diferentemente do critério adotado na apuração fiscal, que considera o abatimento do ICMS.
+A base de cálculo utilizada nas notas fiscais — que também é refletida no razão contábil — considera o valor dos produtos somado ao frete, sem dedução do ICMS destacado.
+Já na apuração fiscal, aplica-se o abatimento do ICMS, reduzindo a base de cálculo para PIS e COFINS.
 """)
 
 
@@ -246,6 +246,7 @@ df_comparativo = pd.DataFrame(dados_comparativo)
 st.dataframe(df_comparativo.style.format({"Valor (R$)": "{:,.2f}"}))
 
 st.markdown("---")
+
 
 
 
