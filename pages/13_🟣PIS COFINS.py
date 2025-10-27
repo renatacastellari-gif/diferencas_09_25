@@ -15,6 +15,14 @@ st.title('COFINS')
 ("""**`COFINS a Recolher - 2300394`** """)
 
 st.markdown("""
+Esta página apresenta as demonstrações das conciliações entre o ICMS e o Razão Contábil.
+
+### 📌 Origem dos Dados
+- Fonte Fiscal: Apuração Fiscal
+- Fonte Contábil: Conta 23000394 do razão extraída do SAP
+""")
+
+st.markdown("""
  ⚠️ Diferença no Item **BASE LIQ FACIAL UP FPS 15 SOFT HONEY**
 - **Razão (Nota Fiscal):** Tributando em **7,60%**
 - **Apuração:** Tributando em **10,30%**
@@ -48,6 +56,7 @@ def highlight_dif(val):
 # Exibir no Streamlit
 st.subheader("📊 Diferença de Alíquota ICMS (Razão vs Apuração)")
 st.dataframe(df.style.format(precision=2).applymap(highlight_dif, subset=['Dif_Alíquota']))
+
 
 
 
