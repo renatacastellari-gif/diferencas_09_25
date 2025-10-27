@@ -63,7 +63,7 @@ st.write("")
 st.write("")
 
 
-
+----------------------------
 
 # Texto explicativo em Markdown
 st.markdown("""
@@ -114,6 +114,9 @@ st.dataframe(df.style.format(precision=2).applymap(highlight_dif, subset=['Dif_C
 
 st.write("")
 st.write("")
+st.write("")
+st.write("")
+
 
 # Texto explicativo em Markdown
 st.markdown("""
@@ -163,7 +166,7 @@ for key in data:
 df = pd.DataFrame(data)
 
 # Exibir tabela formatada (sem roxo)
-st.subheader("📊 Valor Fiscal")
+st.markdown("#### 📊 Valor Fiscal")  # 4 hashtags = menor que subheader
 st.dataframe(df.style.format(precision=2))
 
 st.write("")
@@ -212,6 +215,7 @@ df = pd.DataFrame(data)
 st.subheader("📊 Devoluções com valor fiscal sem razão")
 st.dataframe(df.style.format(precision=2))
 	
+
 
 
 
