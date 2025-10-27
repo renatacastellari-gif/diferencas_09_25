@@ -11,7 +11,7 @@ st.set_page_config(page_title="ICMS Recuperar", page_icon="🟣")
 
 # Cabeçalho
 st.image('teste.svg', width=300)
-st.title('ICMS a Recuperar')
+st.title('COFINS')
 ("""**`COFINS a Recolher - 2300394`** """)
 
 # Dados extraídos da tabela fornecida
@@ -40,4 +40,5 @@ def highlight_dif(val):
 # Exibir no Streamlit
 st.subheader("📊 Diferença de Alíquota ICMS (Razão vs Apuração)")
 st.dataframe(df.style.format(precision=2).applymap(highlight_dif, subset=['Dif_Alíquota']))
+
 
