@@ -174,6 +174,41 @@ st.markdown("""
 - **Razão:** Valor: **1,77**
 - **Prefeitura:** Não localizado**
 """)
+
+st.write("")
+st.write("")
+
+# Texto explicativo em Markdown
+st.markdown("""
+### Devoluções  
+⚠️ Tem valor fiscal sem razão
+""")
+
+# Dados fornecidos
+data = {
+    "NF_FISCAL": [
+        "000388905-005",
+        "000389364-005",
+        "000389464-005",
+        "000389600-005"
+    ],
+    "VLR_COFINS": [20.83, 26.65, 69.50, 76.00],
+    "DATA_FISCAL": [
+        "01/09/2025",
+        "10/09/2025",
+        "11/09/2025",
+        "15/09/2025"
+    ],
+    "CFOP": ["1202"]*4
+}
+
+# Criar DataFrame
+df = pd.DataFrame(data)
+
+# Exibir tabela formatada (sem roxo)
+st.subheader("📊 Devoluções com valor fiscal sem razão")
+st.dataframe(df.style.format(precision=2))
 	
+
 
 
