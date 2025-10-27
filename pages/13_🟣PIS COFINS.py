@@ -36,7 +36,6 @@ st.markdown("""
 data = {
     "referencia": ["000059786-018","000079835-016","000080293-016","000114108-010","000129528-015","000155650-009","000245555-004","000246215-004","000389947-005"],
     "NUM_DOCFIS": ["000059786","000079835","000080293","000114108","000129528","000155650","000245555","000246215","000389947"],
-    "DATA_EMISSAO": ["14/09/2025","02/09/2025","24/09/2025","01/09/2025","01/09/2025","08/09/2025","01/09/2025","09/09/2025","23/09/2025"],
     "DESCRICAO_COMPL": ["BASE LIQ FACIAL UP FPS 15 SOFT HONEY"]*9,
     "VLR_ALIQ_ICMS_RAZAO": [7.6]*9,  # conforme informado na nota fiscal
     "VLR_ALIQ_ICMS_APURACAO": [10.3]*9,  # conforme apuração
@@ -176,3 +175,4 @@ def highlight_high(val):
 # Exibir tabela com estilo
 st.subheader("📊 Tabela de COFINS por Nota Fiscal")
 st.dataframe(df.style.format(precision=2).applymap(highlight_high, subset=['VLR_COFINS']))
+
