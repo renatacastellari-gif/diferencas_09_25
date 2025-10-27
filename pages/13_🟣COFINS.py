@@ -248,39 +248,5 @@ st.dataframe(df_comparativo.style.format({"Valor (R$)": "{:,.2f}"}))
 st.markdown("---")
 
 
-st.image('Screenshot_3.png', width=1000)
+st.image('Screenshot_3.png', width=1400)
 
-data = {
-    "Descrição": [
-        "Total de Receitas de Mercadorias Tributadas de PIS e COFINS",
-        "Receitas de serviços (Prefeitura SP)",
-        "Receitas Financeiras (Razão 4806100) 0,65% PIS e 4,00 % Cofins",
-        "Total das Receitas Tributadas de PIS e COFINS",
-        "(-) Deduções das Receitas",
-        "IPI Aliquota de 1,65% e 7,60%",
-        "ICMS Próprio sobre as vendas Aliquota de 1,65% e 7,60%",
-        "ICMS ST (1,65 % 7,60 %)",
-        "IPI Aliquota diferenciada (2,20% e 10,30%) Monofásico(imp)",
-        "ICMS Próprio vendas Aliquota diferenciada (2,20% e 10,30%) Monofásico(imp)",
-        "ICMS ST Aliquota Monofasica (2,20% e 10,30%) Monofásico(imp)",
-        "Base de Calculo do PIS e COFINS - SAIDAS"
-    ],
-    "Valor 1": [
-        "R$ 4.712.057,42", "R$ 5.691,51", "R$ 137.967,25", "R$ 4.855.716,18",
-        "R$ 282.533,86", "R$ 384.983,58", "R$ 558.957,08", "R$ 1.744,37",
-        "R$ 1.068,49", "R$ 2.673,33", "",  # adiciona vazio
-        "R$ 3.623.755,47"
-    ],
-    "Valor 2": [
-        "R$ 77.841,37", "R$ 93,91", "R$ 896,79", "R$ 78.832,06",
-        "R$ 4.661,81", "R$ 6.352,23", "R$ 9.222,79", "R$ 38,38",
-        "R$ 23,51", "R$ 58,81", "",  # adiciona vazio
-        "R$ 58.474,54"
-    ],
-    "Valor 3": [
-        "R$ 358.570,06", "R$ 432,55", "R$ 5.518,69", "R$ 364.521,30",
-        "R$ 21.472,57", "R$ 29.258,75", "R$ 42.840,74", "R$ 179,67",
-        "R$ 110,05", "R$ 275,35", "",  # adiciona vazio
-        "R$ 270.744,16"
-    ]
-}
