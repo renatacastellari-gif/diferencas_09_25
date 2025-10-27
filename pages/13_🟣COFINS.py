@@ -246,18 +246,3 @@ df_comparativo = pd.DataFrame(dados_comparativo)
 st.dataframe(df_comparativo.style.format({"Valor (R$)": "{:,.2f}"}))
 
 st.markdown("---")
-
-# Bloco 1: Receitas
-st.markdown("#### ✅ Receitas Tributadas")
-st.dataframe(df_receitas.style.format("{:,.2f}", subset=["Receita (R$)", "PIS (R$)", "COFINS (R$)"])
-             .apply(highlight_total, axis=1))
-
-# Bloco 2: Deduções
-st.markdown("#### ✅ Deduções das Receitas")
-st.dataframe(df_deducoes.style.format("{:,.2f}", subset=["Receita (R$)", "PIS (R$)", "COFINS (R$)"])
-             .apply(highlight_total, axis=1))
-
-# Bloco 3: Base de cálculo final
-st.markdown("#### ✅ Base de Cálculo PIS/COFINS")
-st.dataframe(df_base.style.format("{:,.2f}", subset=["Receita (R$)", "PIS (R$)", "COFINS (R$)"])
-             .apply(highlight_total, axis=1))
