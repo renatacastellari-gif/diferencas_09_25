@@ -123,7 +123,6 @@ st.markdown("""
 """)
 
 
-
 # Dados (sem DATA_EMISSAO)
 data = {
     "VLR_COFINS": [
@@ -163,10 +162,10 @@ for key in data:
 # Criar DataFrame
 df = pd.DataFrame(data)
 
+# Função para destacar valores altos
+def highlight_high(val):
+    return 'background-color: #9b59b6; color: white;' if val > 100 else ''
 
 # Exibir tabela estilizada
-st.subheader("📊 Valor fiscal sem razão")
-
-
-
-
+st.subheader("📊 Valor Fiscal")
+st.dataframe(df.style.format(precision=2).applymap(highlight_high, subset=['VLR_COFINS']))
