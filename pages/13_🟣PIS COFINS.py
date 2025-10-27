@@ -181,7 +181,8 @@ st.write("")
 # Texto explicativo em Markdown
 st.markdown("""
 ### Devoluções  
-⚠️ Tem valor fiscal sem razão
+⚠️ Tem valor fiscal sem razão.
+-- Descrição CFOP: Devolução de venda de mercadoria adquirida ou recebida de terceiros
 """)
 
 # Dados fornecidos
@@ -209,6 +210,7 @@ df = pd.DataFrame(data)
 st.subheader("📊 Devoluções com valor fiscal sem razão")
 st.dataframe(df.style.format(precision=2))
 	
+
 
 
 
