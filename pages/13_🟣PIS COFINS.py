@@ -123,8 +123,9 @@ st.markdown("""
 """)
 
 
-
-# Dados extraídos da tabela
+import pandas as pd
+import streamlit as st
+# Dados (sem DATA_EMISSAO)
 data = {
     "VLR_COFINS": [
         43.77,47.82,30.14,11.89,5.73,17.61,48.99,0.94,79.71,20.83,82.38,15.48,17.19,107.72,114.20,4.62,10.81,114.09,
@@ -152,19 +153,21 @@ data = {
         "0002","0002","0002","0002","0002","0002","0002","0002","0002","0002","0002","0002","0002","0002","0002","0002","0002","0002",
         "0002","0002"
     ],
-
     "CFOP": ["5102"]*76
 }
+
+# Ajustar listas para mesmo tamanho
+min_len = min(len(v) for v in data.values())
+for key in data:
+    data[key] = data[key][:min_len]
 
 # Criar DataFrame
 df = pd.DataFrame(data)
 
-# Função para destacar valores altos de COFINS
+# Função para destacar valores altos
 def highlight_high(val):
     return 'background-color: #9b59b6; color: white;' if val > 100 else ''
 
-# Exibir tabela com estilo
+# Exibir tabela estilizada
 st.subheader("📊 Tabela de COFINS por Nota Fiscal")
 st.dataframe(df.style.format(precision=2).applymap(highlight_high, subset=['VLR_COFINS']))
-
-
