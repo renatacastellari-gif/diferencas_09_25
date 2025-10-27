@@ -24,6 +24,8 @@ Esta página apresenta as demonstrações das conciliações do COFINS a recolhe
 st.write("")
 st.write("")
 
+st.markdown("---")
+
 st.markdown("""
  ⚠️ Diferença no Item **BASE LIQ FACIAL UP FPS 15 SOFT HONEY**
 - **Razão (Nota Fiscal):** Tributando em **7,60%**
@@ -117,7 +119,7 @@ st.write("")
 st.write("")
 st.write("")
 
-
+st.markdown("---")
 # Texto explicativo em Markdown
 st.markdown("""
 ⚠️ 77 Notas com valor fiscal sem razão
@@ -171,7 +173,7 @@ st.dataframe(df.style.format(precision=2))
 
 st.write("")
 st.write("")
-
+st.markdown("---")
 st.markdown("""
  ⚠️ Diferença NF de serviço **NF 000022686-002**
 - **Razão:** Valor: **1,77**
@@ -180,7 +182,7 @@ st.markdown("""
 
 st.write("")
 st.write("")
-
+st.markdown("---")
 # Texto explicativo em Markdown
 st.markdown("""
 ### Devoluções  
@@ -215,6 +217,7 @@ df = pd.DataFrame(data)
 st.subheader("📊 Devoluções com valor fiscal sem razão")
 st.dataframe(df.style.format(precision=2))
 	
+
 
 
 
