@@ -214,7 +214,73 @@ df = pd.DataFrame(data)
 # Exibir tabela formatada (sem roxo)
 st.subheader("📊 Devoluções com valor fiscal sem razão")
 st.dataframe(df.style.format(precision=2))
+
+# ADD
+
+
+
+st.title("📊 Conciliação PIS/COFINS")
+
+# Texto explicativo
+st.markdown("""
+A base de cálculo considerada nas notas fiscais corresponde ao valor dos produtos + frete,
+**sem dedução do ICMS destacado**, diferentemente do critério adotado na apuração fiscal, que considera o abatimento do ICMS.
+""")
+
+st.markdown("---")
+
+# Seção 1: Comparativo Apuração vs Razão
+st.markdown("### ✅ Comparativo Apuração vs Razão")
+
+dados_comparativo = {
+    "Descrição": [
+        "Valor COFINS com abatimento do ICMS na base de cálculo (Apuração)",
+        "(+) ICMS Próprio sobre as vendas (1,65% e 7,60%)",
+        "(+) ICMS Próprio vendas Aliquota diferenciada (2,20% e 10,30%) Monofásico",
+        "Valor Razão"
+    ],
+    "Valor (R$)": [264792.91, 29258.75, 110.05, 294161.72]
+}
+
+df_comparativo = pd.DataFrame(dados_comparativo)
+st.dataframe(df_comparativo.style.format({"Valor (R$)": "{:,.2f}"}))
+
+st.markdown("---")
+
+# Seção 2: Capa Apuração (somente mercadorias)
+st.markdown("### ✅ Capa Apuração (Mercadorias)")
+
+dados_capa = {
+    "Descrição": [
+        "Total de Receitas de Mercadorias Tributadas de PIS e COFINS",
+        "Total das Receitas Tributadas de PIS e COFINS",
+        "(-) IPI (1,65% e 7,60%)",
+        "(-) ICMS Próprio sobre as vendas (1,65% e 7,60%)",
+        "(-) ICMS ST (1,65% e 7,60%)",
+        "(-) IPI Aliquota diferenciada Monofásico",
+        "(-) ICMS Próprio vendas Aliquota diferenciada Monofásico",
+        "(-) ICMS ST Aliquota Monofásico",
+        "Base de Cálculo do PIS e COFINS - SAÍDAS"
+    ],
+    "Receita (R$)": [
+        4712057.42, 4855716.18, 282533.86, 384983.58, 558957.08, 1744.37, 1068.49, 2673.33, 3623755.47
+    ],
+    "PIS (R$)": [
+        77841.37, 78832.06, 4661.81, 6352.23, 9222.79, 38.38, 23.51, 58.81, 58474.54
+    ],
+    "COFINS (R$)": [
+        358570.06, 364521.30, 21472.57, 29258.75, 42480.74, 179.67, 110.05, 275.35, 270744.16
+    ]
+}
+
+df_capa = pd.DataFrame(dados_capa)
+st.dataframe(df_capa.style.format({
+    "Receita (R$)": "{:,.2f}",
+    "PIS (R$)": "{:,.2f}",
+    "COFINS (R$)": "{:,.2f}"
+}))
 	
+
 
 
 
