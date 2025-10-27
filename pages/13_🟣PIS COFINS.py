@@ -166,3 +166,14 @@ df = pd.DataFrame(data)
 st.subheader("📊 Tabela de COFINS por Nota Fiscal")
 st.dataframe(df.style.format(precision=2))
 
+st.write("")
+st.write("")
+
+st.markdown("""
+ ⚠️ Diferença NF de serviço **NF 000022686-002**
+- **Razão:** Valor: **1,77**
+- **Prefeitura:** Não localizado**
+""")
+	
+
+
