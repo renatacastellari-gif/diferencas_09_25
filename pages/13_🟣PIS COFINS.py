@@ -169,5 +169,6 @@ def highlight_high(val):
 
 # Exibir tabela estilizada
 st.subheader("📊 Valor fiscal sem razão")
-st.dataframe(df.style.format(precision=2).applymap(highlight_high, subset=['VLR_COFINS']))
+
+
 
