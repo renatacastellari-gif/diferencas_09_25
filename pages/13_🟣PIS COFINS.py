@@ -6,7 +6,7 @@ import io
 
 
 # Configuração da página
-st.set_page_config(page_title="ICMS Recuperar", page_icon="🟣")
+st.set_page_config(page_title="COFINS", page_icon="🟣")
 
 
 # Cabeçalho
@@ -15,7 +15,7 @@ st.title('COFINS')
 ("""**`COFINS a Recolher - 2300394`** """)
 
 st.markdown("""
-Esta página apresenta as demonstrações das conciliações entre o ICMS e o Razão Contábil.
+Esta página apresenta as demonstrações das conciliações do COFINS a recolher.
 
 ### 📌 Origem dos Dados
 - Fonte Fiscal: Apuração Fiscal
@@ -70,7 +70,7 @@ st.write("")
 st.markdown("""
 ⚠️ Diferença no Item **LB APONTADOR**
 - **Razão (Nota Fiscal):** Não tributou
-- **Apuração:** Tributou normalmente (COFINS informado)
+- **Apuração:** Tributou normalmente
 """)
 
 # Dados corretos extraídos da tabela
@@ -109,5 +109,6 @@ def highlight_dif(val):
 # Exibir no Streamlit
 st.subheader("📊 Diferença de tributação (Razão vs Apuração)")
 st.dataframe(df.style.format(precision=2).applymap(highlight_dif, subset=['Dif_COFINS']))
+
 
 
