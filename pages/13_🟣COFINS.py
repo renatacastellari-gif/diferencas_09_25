@@ -248,5 +248,11 @@ st.dataframe(df_comparativo.style.format({"Valor (R$)": "{:,.2f}"}))
 st.markdown("---")
 
 
-st.image('Screenshot_3.png', width=1400)
+
+st.markdown(
+    """
+    <div style="display: flex; justify-content: center; margin: 20px;">
+        <img src="Screenshot_3.png" style="width: 90%; border-radius: 10px; box-shadow: 0 0 15px
+
+
 
