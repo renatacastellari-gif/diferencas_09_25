@@ -247,49 +247,17 @@ st.dataframe(df_comparativo.style.format({"Valor (R$)": "{:,.2f}"}))
 
 st.markdown("---")
 
-# Seção 2: Capa Apuração (somente mercadorias)
-st.markdown("### ✅ Capa Apuração (Mercadorias)")
+# Bloco 1: Receitas
+st.markdown("#### ✅ Receitas Tributadas")
+st.dataframe(df_receitas.style.format("{:,.2f}", subset=["Receita (R$)", "PIS (R$)", "COFINS (R$)"])
+             .apply(highlight_total, axis=1))
 
-dados_capa = {
-    "Descrição": [
-        "Total de Receitas de Mercadorias Tributadas de PIS e COFINS",
-        "Total das Receitas Tributadas de PIS e COFINS",
-        "(-) IPI (1,65% e 7,60%)",
-        "(-) ICMS Próprio sobre as vendas (1,65% e 7,60%)",
-        "(-) ICMS ST (1,65% e 7,60%)",
-        "(-) IPI Aliquota diferenciada Monofásico",
-        "(-) ICMS Próprio vendas Aliquota diferenciada Monofásico",
-        "(-) ICMS ST Aliquota Monofásico",
-        "Base de Cálculo do PIS e COFINS - SAÍDAS"
-    ],
-    "Receita (R$)": [
-        4712057.42, 4855716.18, 282533.86, 384983.58, 558957.08, 1744.37, 1068.49, 2673.33, 3623755.47
-    ],
-    "PIS (R$)": [
-        77841.37, 78832.06, 4661.81, 6352.23, 9222.79, 38.38, 23.51, 58.81, 58474.54
-    ],
-    "COFINS (R$)": [
-        358570.06, 364521.30, 21472.57, 29258.75, 42480.74, 179.67, 110.05, 275.35, 270744.16
-    ]
-}
+# Bloco 2: Deduções
+st.markdown("#### ✅ Deduções das Receitas")
+st.dataframe(df_deducoes.style.format("{:,.2f}", subset=["Receita (R$)", "PIS (R$)", "COFINS (R$)"])
+             .apply(highlight_total, axis=1))
 
-df_capa = pd.DataFrame(dados_capa)
-st.dataframe(df_capa.style.format({
-    "Receita (R$)": "{:,.2f}",
-    "PIS (R$)": "{:,.2f}",
-    "COFINS (R$)": "{:,.2f}"
-}))
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Bloco 3: Base de cálculo final
+st.markdown("#### ✅ Base de Cálculo PIS/COFINS")
+st.dataframe(df_base.style.format("{:,.2f}", subset=["Receita (R$)", "PIS (R$)", "COFINS (R$)"])
+             .apply(highlight_total, axis=1))
