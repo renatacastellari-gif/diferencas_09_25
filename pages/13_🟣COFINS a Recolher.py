@@ -175,7 +175,7 @@ st.markdown("---")
 st.markdown("""
  ⚠️ Diferença NF de serviço **NF 000022686-002**
 - **Razão:** Valor: **1,77**
-- **Prefeitura:** Não localizado**
+- **Prefeitura:** Não localizado
 """)
 
 st.write("")
@@ -248,6 +248,7 @@ st.dataframe(df_comparativo.style.format({"Valor (R$)": "{:,.2f}"}))
 st.markdown("---")
 
 st.image("Screenshot_3.png", width=1600)
+
 
 
 
