@@ -21,6 +21,7 @@ Esta página apresenta as demonstrações das conciliações entre o ICMS e o Ra
 - Fonte Fiscal: Apuração Fiscal
 - Fonte Contábil: Conta 23000394 do razão extraída do SAP
 """)
+write("")
 
 st.markdown("""
  ⚠️ Diferença no Item **BASE LIQ FACIAL UP FPS 15 SOFT HONEY**
@@ -56,6 +57,7 @@ def highlight_dif(val):
 # Exibir no Streamlit
 st.subheader("📊 Diferença de Alíquota ICMS (Razão vs Apuração)")
 st.dataframe(df.style.format(precision=2).applymap(highlight_dif, subset=['Dif_Alíquota']))
+
 
 
 
