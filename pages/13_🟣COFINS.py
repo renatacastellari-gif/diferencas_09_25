@@ -303,7 +303,8 @@ styled_df = style_table(df)
 
 # Exibir no Streamlit
 st.write(styled_df.to_html(), unsafe_allow_html=True)
-``
+
+
 
 
 
