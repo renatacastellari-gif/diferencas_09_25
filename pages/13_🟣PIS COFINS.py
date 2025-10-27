@@ -67,7 +67,7 @@ st.write("")
 
 # Texto explicativo em Markdown
 st.markdown("""
-### ⚠️ Diferença no Item **LB APONTADOR**
+⚠️ Diferença no Item **LB APONTADOR**
 - **Razão (Nota Fiscal):** Não tributou
 - **Apuração:** Tributou normalmente
 """)
@@ -98,6 +98,7 @@ def highlight_dif(val):
 # Exibir no Streamlit
 st.subheader("📊 Diferença de Alíquota ICMS (Razão vs Apuração)")
 st.dataframe(df.style.format(precision=2).applymap(highlight_dif, subset=['Dif_Alíquota']))
+
 
 
 
