@@ -116,8 +116,6 @@ st.dataframe(df.style.format(precision=2).applymap(highlight_dif, subset=['Dif_C
 
 st.write("")
 st.write("")
-st.write("")
-st.write("")
 
 st.markdown("---")
 # Texto explicativo em Markdown
@@ -217,6 +215,7 @@ df = pd.DataFrame(data)
 st.subheader("📊 Devoluções com valor fiscal sem razão")
 st.dataframe(df.style.format(precision=2))
 	
+
 
 
 
