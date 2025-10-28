@@ -29,9 +29,9 @@ A base de cálculo utilizada nas notas fiscais — que também é refletida no r
 Já na apuração fiscal, aplica-se o abatimento do ICMS, reduzindo a base de cálculo para PIS e COFINS.
 """)
 
-
-st.markdown("<p style='font-size:28px; font-weight:bold; color:#FFA500;'>COFINS</p>", unsafe_allow_html=True)
 st.markdown("---")
+st.markdown("<p style='font-size:28px; font-weight:bold; color:#FFA500;'>PIS</p>", unsafe_allow_html=True)
+
 # Seção 1: Comparativo Apuração vs Razão
 st.markdown(
     "<p style='font-size:22px; font-weight:bold; color:#9B4DCC;'> ☑️ Comparativo Apuração vs Razão</p>",
@@ -54,6 +54,8 @@ st.dataframe(df_comparativo.style.format({"Valor (R$)": "{:,.2f}"}))
 
 st.image("Screenshot_4.png", width=1600)
 
+
+st.markdown("---")
 # cofins
 st.markdown("<p style='font-size:28px; font-weight:bold; color:#FFA500;'>COFINS</p>", unsafe_allow_html=True)
 
