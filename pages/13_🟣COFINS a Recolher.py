@@ -62,7 +62,7 @@ def highlight_dif(val):
 # Exibir no Streamlit
 
 st.markdown(
-    "<p style='font-size:18px; font-weight:bold; color:#9B4DCC;'> 📊Diferença de Tributação (Razão vs Apuração)</p>",
+    "<p style='font-size:18px; font-weight:bold; color:#9B4DCC;'> 📊</p>",
     unsafe_allow_html=True
 )
 
@@ -116,7 +116,7 @@ def highlight_dif(val):
     return 'background-color: #9b59b6; color: white;' if val > 0 else ''
 
 # Exibir no Streamlit
-st.subheader("📊 Diferença de tributação (Razão vs Apuração)")
+st.subheader("📊")
 st.dataframe(df.style.format(precision=2).applymap(highlight_dif, subset=['Dif_COFINS']))
 
 
@@ -248,7 +248,12 @@ Já na apuração fiscal, aplica-se o abatimento do ICMS, reduzindo a base de c�
 
 
 # Seção 1: Comparativo Apuração vs Razão
-st.markdown("### ✅ Comparativo Apuração vs Razão")
+
+# Seção 1: Comparativo Apuração vs Razão
+st.markdown(
+    "<p style='font-size:22px; font-weight:bold; color:#9B4DCC;'> ☑️ Comparativo Apuração vs Razão</p>",
+    unsafe_allow_html=True
+)
 
 dados_comparativo = {
     "Descrição": [
@@ -266,6 +271,7 @@ st.dataframe(df_comparativo.style.format({"Valor (R$)": "{:,.2f}"}))
 st.markdown("---")
 
 st.image("Screenshot_3.png", width=1600)
+
 
 
 
