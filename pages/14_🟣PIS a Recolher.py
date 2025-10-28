@@ -22,7 +22,9 @@ Esta página apresenta as demonstrações das conciliações do PIS a recolher.
 
 
 st.markdown("---")
-st.markdown("⚠️ Diferença de valor")
+st.markdown("<p style='font-size:18px; font-weight:bold; color:#FFA500;'>⚠️ Diferença de valor</p>", unsafe_allow_html=True)
+
+
 
 
 # Dados
@@ -41,7 +43,7 @@ st.dataframe(df.style.format({"vlr_razão": "{:,.2f}", "vlr_fiscal": "{:,.2f}"})
 
 
 st.markdown("---")
-st.markdown("<p style='font-size:20px; font-weight:bold; color:#FFA500;'>⚠️ Diferença no Item **LB APONTADOR*</p>", unsafe_allow_html=True)
+st.markdown("<p style='font-size:18px; font-weight:bold; color:#FFA500;'>⚠️ Diferença no Item LB APONTADOR</p>", unsafe_allow_html=True)
 st.markdown("""
 - **Razão (Nota Fiscal):** Não tributou
 - **Apuração:** Tributou normalmente
