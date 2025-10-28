@@ -37,15 +37,7 @@ else:
     ("""**`Competência: 09/2025`** """)
 
 
-st.markdown("""**`FATURAMENTO - 4000000`**""")
-st.markdown("""**`ICMS a RECOLHER - 2300391`**""")
-st.markdown("""**`IPI a RECOLHER - 2300390`**""")
-st.markdown("""**`ICMS a Recuperar - 1280345`**""")
-st.markdown("""**`IPI a Recuperar - 1280345`**""")
-st.markdown("""**`COFINS a Recolher - 2300394`**""")
-st.markdown("""**`PIS a Recolher - 2300395`**""")
-st.markdown("""**`PIS a Recuperar - 1280343`**""")
-st.markdown("""**`COFINS a Recuperar - 12803434`**""")
+
 
 
     st.markdown("""
@@ -75,6 +67,7 @@ O objetivo é oferecer uma visão clara e organizada para apoiar:
 > **Objetivo:** Garantir o alinhamento entre os saldos fiscais e contábeis, prevenindo divergências nos registros.              
  
 """)
+
 
 
 
