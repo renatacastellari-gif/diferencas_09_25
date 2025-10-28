@@ -169,6 +169,11 @@ st.markdown("""
 st.write("")
 
 st.markdown("---")
+
+st.markdown(
+    "<p style='font-size:20px; font-weight:bold; color:#800080 ;'> DEVOLUÇÕES</p>",
+    unsafe_allow_html=True
+)
 # Texto explicativo em Markdown
 st.markdown("""
 ### Devoluções  
@@ -201,10 +206,7 @@ df = pd.DataFrame(data)
 
 # Exibir tabela formatada (sem roxo)
 
-st.markdown(
-    "<p style='font-size:18px; font-weight:bold; color:#6A1B9A;'>⚠️ DEVOLUÇÕES</p>",
-    unsafe_allow_html=True
-)
+
 
 st.subheader("📊 Devoluções com valor fiscal sem razão")
 st.dataframe(df.style.format(precision=2))
