@@ -47,3 +47,33 @@ st.dataframe(df_comparativo.style.format({"Valor (R$)": "{:,.2f}"}))
 st.markdown("---")
 
 st.image("Screenshot_3.png", width=1600)
+
+
+# PIS
+
+st.markdown("---")
+
+st.markdown("<p style='font-size:28px; font-weight:bold; color:#FFA500;'>PIS</p>", unsafe_allow_html=True)
+
+
+
+
+# Seção 1: Comparativo Apuração vs Razão
+st.markdown("### ✅ Comparativo Apuração vs Razão")
+
+dados_comparativo = {
+    "Descrição": [
+        "Valor COFINS com abatimento do ICMS na base de cálculo (Apuração)",
+        "(+) ICMS Próprio sobre as vendas (1,65% e 7,60%)",
+        "(+) ICMS Próprio vendas Aliquota diferenciada (2,20% e 10,30%) Monofásico",
+        "Valor Razão"
+    ],
+    "Valor (R$)": [57483.84, 6352.23, 23.51, 63859.58]
+}
+
+df_comparativo = pd.DataFrame(dados_comparativo)
+st.dataframe(df_comparativo.style.format({"Valor (R$)": "{:,.2f}"}))
+
+st.markdown("---")
+
+st.image("Screenshot_3.png", width=1600)
