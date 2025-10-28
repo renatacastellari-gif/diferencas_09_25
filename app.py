@@ -35,6 +35,18 @@ else:
     st.image('teste.svg', width=400) 
     st.title('Conciliações dos Impostos')
 
+    #teste
+
+    st.markdown(
+    """
+    <h1 style='display:flex; align-items:center; gap:10px;'>
+        download.png
+        Conciliações dos Impostos
+    </h1>
+    """,
+    unsafe_allow_html=True
+)
+
     # Competência em verde
     st.markdown("""**`Competência: 09/2025`**""")
 
@@ -81,6 +93,7 @@ st.markdown(
     "<p style='font-size:20px; font-weight:normal; color:#9B4DCC;'> 📎Esta página foi desenvolvida para proporcionar acesso rápido e facilitar a visualização das informações.</p>",
     unsafe_allow_html=True
 )
+
 
 
 
