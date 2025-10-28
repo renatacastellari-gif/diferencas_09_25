@@ -40,8 +40,8 @@ else:
 
     # Dados como strings (códigos de contas), alinhados
     dados = [
-        ("ICMS a RECOLHER", "2300391"),
-        ("IPI a RECOLHER", "2300390"),
+        ("ICMS a Recolher", "2300391"),
+        ("IPI a Recolher", "2300390"),
         ("COFINS a Recolher", "2300394"),
         ("PIS a Recolher", "2300395"),
         ("PIS a Recuperar", "1280343"),
@@ -71,6 +71,7 @@ else:
 
     > **Objetivo:** Garantir o alinhamento entre os saldos fiscais e contábeis, prevenindo divergências nos registros.
     """)
+
 
 
 
