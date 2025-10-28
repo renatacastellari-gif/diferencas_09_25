@@ -61,10 +61,13 @@ else:
 
     Esta aplicação apresenta as **demonstrações das conciliações entre os saldos fiscais e contábeis (Razão)**, destacando as **diferenças identificadas** e seus respectivos detalhes.
 
-    O objetivo é oferecer uma visão clara e organizada para apoiar:
-    - **Apuração dos impostos** (ICMS, IPI, PIS, COFINS)
+    O objetivo é oferecer uma visão clara e organizada para apoiar os departamentos fiscal e contábil. 
+    - **Conciliação dos impostos** 
     - **Validação dos lançamentos contábeis**
     - **Identificação de ajustes necessários**
+
+   
+
 
     ✅ Navegue pelas abas para consultar as diferenças do mês.
 
@@ -72,6 +75,10 @@ else:
 
     > **Objetivo:** Garantir o alinhamento entre os saldos fiscais e contábeis, prevenindo divergências nos registros.
     """)
+st.markdown(
+    "<p style='font-size:15px; font-weight:bold; color:#9B4DCC;'> 📝  Esta página foi criada para acesso ágil e visualização facilitada das diferenças e dos detalhes das conciliações.</p>",
+    unsafe_allow_html=True
+)
 
 
 
