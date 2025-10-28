@@ -28,9 +28,7 @@ st.write("")
 st.markdown("---")
 
 st.markdown("""
- ⚠️ Diferença de valor**
-- **Razão (Nota Fiscal):** Tributando em **7,60%**
-- **Apuração:** Tributando em **10,30%**
+ ⚠️ Diferença de valor
 """)
 	
 
