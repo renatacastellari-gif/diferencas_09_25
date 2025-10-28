@@ -15,12 +15,12 @@ st.set_page_config(page_title="Resumo PIS COFINS", page_icon="🟣")
 st.image('teste.svg', width=300)
 st.title('RESUMO PIS COFINS')
 ("""**`PIS 2300395`** """)
-("""**`PIS 2300394`** """)
+("""**`COFINS 2300394`** """)
 
 
 st.markdown("---")
 
-st.markdown("<p style='font-size:28px; font-weight:bold; color:#FFA500;'>Resumo</p>", unsafe_allow_html=True)
+st.markdown("<p style='font-size:28px; font-weight:bold; color:#FFA500;'>COFINS</p>", unsafe_allow_html=True)
 
 # Texto explicativo
 st.markdown("""
