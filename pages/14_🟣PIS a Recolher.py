@@ -44,8 +44,6 @@ data = {
 # Criar DataFrame
 df = pd.DataFrame(data)
 
-# Calcular diferença percentual
-df["Dif_Alíquota"] = df["VLR_ALIQ_ICMS_APURACAO"] - df["VLR_ALIQ_ICMS_RAZAO"]
 
 # Função para destacar diferença
 def highlight_dif(val):
@@ -53,7 +51,7 @@ def highlight_dif(val):
 
 # Exibir no Streamlit
 st.subheader("📊 Diferença de Tributação (Razão vs Apuração)")
-st.dataframe(df.style.format(precision=2).applymap(highlight_dif, subset=['Dif_Alíquota']))
+
 
 
 st.write("")
