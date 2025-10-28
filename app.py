@@ -35,17 +35,23 @@ else:
     st.image('teste.svg', width=400) 
     st.title('Conciliações dos Impostos')
 
+    # Competência em verde
     st.markdown("""**`Competência: 09/2025`**""")
 
-    # Dados em verde
-    st.markdown("""**`ICMS a RECOLHER - 2300391`**""")
-    st.markdown("""**`IPI a RECOLHER - 2300390`**""")
-    st.markdown("""**`ICMS a Recuperar - 1280345`**""")
-    st.markdown("""**`IPI a Recuperar - 1280345`**""")
-    st.markdown("""**`COFINS a Recolher - 2300394`**""")
-    st.markdown("""**`PIS a Recolher - 2300395`**""")
-    st.markdown("""**`PIS a Recuperar - 1280343`**""")
-    st.markdown("""**`COFINS a Recuperar - 12803434`**""")
+    # Dados alinhados e em verde
+    dados = [
+        ("ICMS a RECOLHER", 2300391),
+        ("IPI a RECOLHER", 2300390),
+        ("ICMS a Recuperar", 1280345),
+        ("IPI a Recuperar", 1280345),
+        ("COFINS a Recolher", 2300394),
+        ("PIS a Recolher", 2300395),
+        ("PIS a Recuperar", 1280343),
+        ("COFINS a Recuperar", 12803434)
+    ]
+
+    linhas_formatadas = [f"{nome:<25} {valor:>10,}" for nome, valor in dados]
+    st.code("\n".join(linhas_formatadas))
 
     # Texto explicativo
     st.markdown("""
