@@ -30,7 +30,8 @@ Já na apuração fiscal, aplica-se o abatimento do ICMS, reduzindo a base de c�
 """)
 
 
-
+st.markdown("<p style='font-size:28px; font-weight:bold; color:#FFA500;'>COFINS</p>", unsafe_allow_html=True)
+st.markdown("---")
 # Seção 1: Comparativo Apuração vs Razão
 st.markdown(
     "<p style='font-size:22px; font-weight:bold; color:#9B4DCC;'> ☑️ Comparativo Apuração vs Razão</p>",
@@ -51,19 +52,20 @@ dados_comparativo = {
 df_comparativo = pd.DataFrame(dados_comparativo)
 st.dataframe(df_comparativo.style.format({"Valor (R$)": "{:,.2f}"}))
 
+st.image("Screenshot_4.png", width=1600)
 
+# cofins
 st.markdown("<p style='font-size:28px; font-weight:bold; color:#FFA500;'>COFINS</p>", unsafe_allow_html=True)
 
-# Texto explicativo
-st.markdown("""
-A base de cálculo utilizada nas notas fiscais — que também é refletida no razão contábil — considera o valor dos produtos somado ao frete, sem dedução do ICMS destacado.
-Já na apuração fiscal, aplica-se o abatimento do ICMS, reduzindo a base de cálculo para PIS e COFINS.
-""")
 
 
 
 # Seção 1: Comparativo Apuração vs Razão
-st.markdown("### ✅ Comparativo Apuração vs Razão")
+st.markdown(
+    "<p style='font-size:22px; font-weight:bold; color:#9B4DCC;'> ☑️ Comparativo Apuração vs Razão</p>",
+    unsafe_allow_html=True
+)
+
 
 dados_comparativo = {
     "Descrição": [
@@ -90,5 +92,5 @@ st.markdown("---")
 
 st.markdown("---")
 
-st.image("Screenshot_4.png", width=1600)
+
 
