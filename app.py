@@ -38,19 +38,19 @@ else:
     # Competência em verde
     st.markdown("""**`Competência: 09/2025`**""")
 
-    # Dados alinhados e em verde
+    # Dados como strings (códigos de contas), alinhados
     dados = [
-        ("ICMS a RECOLHER", 2300391),
-        ("IPI a RECOLHER", 2300390),
-        ("ICMS a Recuperar", 1280345),
-        ("IPI a Recuperar", 1280345),
-        ("COFINS a Recolher", 2300394),
-        ("PIS a Recolher", 2300395),
-        ("PIS a Recuperar", 1280343),
-        ("COFINS a Recuperar", 12803434)
+        ("ICMS a RECOLHER", "2300391"),
+        ("IPI a RECOLHER", "2300390"),
+        ("ICMS a Recuperar", "1280345"),
+        ("IPI a Recuperar", "1280345"),
+        ("COFINS a Recolher", "2300394"),
+        ("PIS a Recolher", "2300395"),
+        ("PIS a Recuperar", "1280343"),
+        ("COFINS a Recuperar", "12803434")
     ]
 
-    linhas_formatadas = [f"{nome:<25} {valor:>10,}" for nome, valor in dados]
+    linhas_formatadas = [f"{nome:<25} {codigo:>10}" for nome, codigo in dados]
     st.code("\n".join(linhas_formatadas))
 
     # Texto explicativo
