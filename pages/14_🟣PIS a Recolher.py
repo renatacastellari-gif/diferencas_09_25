@@ -175,9 +175,10 @@ st.markdown(
     unsafe_allow_html=True
 )
 # Texto explicativo em Markdown
+st.markdown("<p style='font-size:18px; font-weight:bold; color:#FFA500;'>⚠️ Tem valor fiscal sem razão</p>", unsafe_allow_html=True)
 st.markdown("""
 
-⚠️ Tem valor fiscal sem razão
+
  
 - **Descrição CFOP: Devolução de venda de mercadoria adquirida ou recebida de terceiros**
 
