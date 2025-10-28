@@ -1,27 +1,28 @@
 import streamlit as st
 import pandas as pd
 
-# Configuração padrão (sem wide global)
-st.set_page_config(page_title="Resumo PIS COFINS", page_icon="🟣")
+# Configuração da página (apenas uma vez e no topo)
+st.set_page_config(page_title="Resumo PIS COFINS", page_icon="🟣", layout="wide")
 
-st.title("RESUMO PIS COFINS")
+# Cabeçalho
+st.image('teste.svg', width=300)
+st.title('RESUMO PIS COFINS')
+st.markdown("**`PIS 2300395`**")
+st.markdown("**`COFINS 2300394`**")
 
-# CSS para simular wide apenas nesta página
-st.markdown(
-    """
-    <style>
-    /* Remove limite de largura do container principal */
-    .main {
-        max-width: 100%;
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+st.markdown("---")
 
-# Conteúdo
+st.markdown("<p style='font-size:28px; font-weight:bold; color:#FFA500;'>COFINS</p>", unsafe_allow_html=True)
+
+# Texto explicativo
+st.markdown("""
+A base de cálculo utilizada nas notas fiscais — que também é refletida no razão contábil — considera o valor dos produtos somado ao frete, sem dedução do ICMS destacado.
+Já na apuração fiscal, aplica-se o abatimento do ICMS, reduzindo a base de cálculo para PIS e COFINS.
+""")
+
+# Seção 1: Comparativo Apuração vs Razão
+st.markdown("### ✅ Comparativo Apuração vs Razão")
+
 dados_comparativo = {
     "Descrição": [
         "Valor COFINS com abatimento do ICMS na base de cálculo (Apuração)",
@@ -37,5 +38,5 @@ st.dataframe(df_comparativo.style.format({"Valor (R$)": "{:,.2f}"}))
 
 st.markdown("---")
 
-# Imagem ocupando largura total
+# Imagem wide de verdade
 st.image("Screenshot_3.png", use_container_width=True)
