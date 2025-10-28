@@ -171,7 +171,7 @@ st.write("")
 st.markdown("---")
 
 st.markdown(
-    "<p style='font-size:22px; font-weight:bold; color:9B4DCC;'> DEVOLUÇÕES</p>",
+    "<p style='font-size:22px; font-weight:bold; color:#9B4DCC;'> DEVOLUÇÕES</p>",
     unsafe_allow_html=True
 )
 # Texto explicativo em Markdown
