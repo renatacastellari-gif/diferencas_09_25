@@ -171,12 +171,12 @@ st.write("")
 st.markdown("---")
 
 st.markdown(
-    "<p style='font-size:20px; font-weight:bold; color:#800080 ;'> DEVOLUÇÕES</p>",
+    "<p style='font-size:22px; font-weight:bold; color:#6A1B9A;'> DEVOLUÇÕES</p>",
     unsafe_allow_html=True
 )
 # Texto explicativo em Markdown
 st.markdown("""
-### Devoluções  
+
 ⚠️ Tem valor fiscal sem razão
  
 - **Descrição CFOP: Devolução de venda de mercadoria adquirida ou recebida de terceiros**
