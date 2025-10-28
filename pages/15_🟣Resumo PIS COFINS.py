@@ -76,4 +76,4 @@ st.dataframe(df_comparativo.style.format({"Valor (R$)": "{:,.2f}"}))
 
 st.markdown("---")
 
-st.image("Screenshot_3.png", width=1600)
+st.image("Screenshot_4.png", width=1600)
