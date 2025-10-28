@@ -92,9 +92,11 @@ st.markdown("---")
 # Texto explicativo em Markdown
 st.markdown("""
 ⚠️ 77 Notas com valor fiscal sem razão
+
 - **Razão (Nota Fiscal):** Sem tributação
 - **Apuração:** Tributado 
 """)
+st.markdown("<p style='font-size:20px; font-weight:bold; color:#FFA500;'>⚠️ 77 Notas com valor fiscal sem razão</p>", unsafe_allow_html=True)
 
 # TESTETE
 
@@ -156,7 +158,7 @@ st.dataframe(df_pis.style.format({"VLR_PIS": "{:,.2f}"}))
 st.markdown("---")
 st.markdown("""
  ⚠️ Diferença NF de serviço **NF 000022686-002**
-- **Razão:** Valor: **1,77**
+- **Razão:** Valor: **0,38**
 - **Prefeitura:** Não localizado
 """)
 
