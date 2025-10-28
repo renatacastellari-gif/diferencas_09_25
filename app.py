@@ -54,9 +54,10 @@ else:
     linhas_formatadas = [f"{nome:<25} {codigo:>10}" for nome, codigo in dados]
     st.code("\n".join(linhas_formatadas))
 
+    st.markdown("<p style='font-size:18px; font-weight:bold; color:#FFA500;'>Seja bem vindo(a)!</p>", unsafe_allow_html=True)
     # Texto explicativo
     st.markdown("""
-    ## Seja bem vindo(a)
+   
 
     Esta aplicação apresenta as **demonstrações das conciliações entre os saldos fiscais e contábeis (Razão)**, destacando as **diferenças identificadas** e seus respectivos detalhes.
 
@@ -71,6 +72,7 @@ else:
 
     > **Objetivo:** Garantir o alinhamento entre os saldos fiscais e contábeis, prevenindo divergências nos registros.
     """)
+
 
 
 
