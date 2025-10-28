@@ -75,10 +75,13 @@ else:
 
     > **Objetivo:** Garantir o alinhamento entre os saldos fiscais e contábeis, prevenindo divergências nos registros.
     """)
+
+
 st.markdown(
-    "<p style='font-size:15px; font-weight:bold; color:#9B4DCC;'> 📝  Esta página foi criada para acesso ágil e visualização facilitada das diferenças e dos detalhes das conciliações.</p>",
+    "<p style='font-size:15px; font-weight:normal; color:#9B4DCC;'>Esta página foi criada para acesso ágil e visualização facilitada das diferenças e dos detalhes das conciliações.</p>",
     unsafe_allow_html=True
 )
+
 
 
 
