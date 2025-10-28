@@ -38,5 +38,5 @@ st.dataframe(df_comparativo.style.format({"Valor (R$)": "{:,.2f}"}))
 
 st.markdown("---")
 
-# Imagem wide
+# Imagem wide de verdade
 st.image("Screenshot_3.png", use_container_width=True)
