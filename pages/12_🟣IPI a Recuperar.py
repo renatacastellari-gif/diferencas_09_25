@@ -18,6 +18,7 @@ Esta página apresenta as demonstrações das conciliações entre o ICMS e o Ra
 - Fonte Contábil: Conta 1280342 (IPI a recuperar) do razão extraída do SAP
 """)
 
+st.markdown("---")
 # Diferença
 diferenca = 2033.84
 st.markdown("<p style='font-size:20px; font-weight:bold; color:#FFA500;'>🔍 Diferença entre Fiscal e Contabilidade</p>", unsafe_allow_html=True)
@@ -60,6 +61,7 @@ df_fiscal = pd.DataFrame(data_fiscal)
 
 st.markdown("<p style='font-size:14px; font-weight:bold;'>📑 Fiscal</p>", unsafe_allow_html=True)
 st.dataframe(df_fiscal.style.format({"VLR_ICMS_FISCAL": "R$ {:.2f}"}))
+
 
 
 
