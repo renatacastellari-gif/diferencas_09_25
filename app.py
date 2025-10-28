@@ -27,57 +27,40 @@ if not st.session_state.logged_in:
         if senha == PASSWORD:
             st.session_state.logged_in = True
             st.success("Acesso liberado! Agora você pode navegar pelas páginas.")
-            st.rerun() # Recarrega a página para mostrar o menu
+            st.rerun()
         else:
             st.error("Senha incorreta.")
 else:
     # 🔒 Conteúdo protegido
     st.image('teste.svg', width=400) 
     st.title('Conciliações dos Impostos')
-    ("""**`Competência: 09/2025`** """)
 
-    
+    st.markdown("""**`Competência: 09/2025`**""")
 
+    # Dados em verde
+    st.markdown("""**`ICMS a RECOLHER - 2300391`**""")
+    st.markdown("""**`IPI a RECOLHER - 2300390`**""")
+    st.markdown("""**`ICMS a Recuperar - 1280345`**""")
+    st.markdown("""**`IPI a Recuperar - 1280345`**""")
+    st.markdown("""**`COFINS a Recolher - 2300394`**""")
+    st.markdown("""**`PIS a Recolher - 2300395`**""")
+    st.markdown("""**`PIS a Recuperar - 1280343`**""")
+    st.markdown("""**`COFINS a Recuperar - 12803434`**""")
 
-
-
-
-
-
-
+    # Texto explicativo
     st.markdown("""
     ## Seja bem vindo(a)
-    
-Esta aplicação apresenta as **demonstrações das conciliações entre os saldos fiscais e contábeis (Razão)**, destacando as **diferenças identificadas** e seus respectivos detalhes.
 
-O objetivo é oferecer uma visão clara e organizada para apoiar:
-- **Apuração dos impostos** (ICMS, IPI, PIS, COFINS)
-- **Validação dos lançamentos contábeis**
-- **Identificação de ajustes necessários**
+    Esta aplicação apresenta as **demonstrações das conciliações entre os saldos fiscais e contábeis (Razão)**, destacando as **diferenças identificadas** e seus respectivos detalhes.
 
+    O objetivo é oferecer uma visão clara e organizada para apoiar:
+    - **Apuração dos impostos** (ICMS, IPI, PIS, COFINS)
+    - **Validação dos lançamentos contábeis**
+    - **Identificação de ajustes necessários**
 
-                
+    ✅ Navegue pelas abas para consultar as diferenças do mês.
 
-✅ Navegue pelas abas para consultar as diferenças do mês.
+    ---
 
-
-
-
-
-
-                
-
----
-
-> **Objetivo:** Garantir o alinhamento entre os saldos fiscais e contábeis, prevenindo divergências nos registros.              
- 
-""")
-
-
-
-
-
-
-
-
-
+    > **Objetivo:** Garantir o alinhamento entre os saldos fiscais e contábeis, prevenindo divergências nos registros.
+    """)
