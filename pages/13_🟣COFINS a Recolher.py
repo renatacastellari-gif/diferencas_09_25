@@ -190,9 +190,16 @@ st.write("")
 
 st.markdown("---")
 # Texto explicativo em Markdown
+st.markdown(
+    "<p style='font-size:23px; font-weight:bold; color:#9B4DCC;'> ↩️ DEVOLUÇÕES</p>",
+    unsafe_allow_html=True
+)
+
+st.markdown("<p style='font-size:18px; font-weight:bold; color:#FFA500;'>⚠️ Tem valor fiscal sem razão </p>", unsafe_allow_html=True)
 st.markdown("""
-### Devoluções  
-⚠️ Tem valor fiscal sem razão
+
+
+
  
 - **Descrição CFOP: Devolução de venda de mercadoria adquirida ou recebida de terceiros**
 
@@ -220,14 +227,17 @@ data = {
 df = pd.DataFrame(data)
 
 # Exibir tabela formatada (sem roxo)
-st.subheader("📊 Devoluções com valor fiscal sem razão")
+st.subheader("📊")
 st.dataframe(df.style.format(precision=2))
 
 # ADD
 
 st.markdown("---")
 
-st.markdown("<p style='font-size:28px; font-weight:bold; color:#FFA500;'>Resumo</p>", unsafe_allow_html=True)
+st.markdown(
+    "<p style='font-size:23px; font-weight:bold; color:#9B4DCC;'> 📝 RESUMO</p>",
+    unsafe_allow_html=True
+)
 
 # Texto explicativo
 st.markdown("""
@@ -256,6 +266,7 @@ st.dataframe(df_comparativo.style.format({"Valor (R$)": "{:,.2f}"}))
 st.markdown("---")
 
 st.image("Screenshot_3.png", width=1600)
+
 
 
 
