@@ -34,7 +34,7 @@ else:
     # 🔒 Conteúdo protegido
     st.image('teste.svg', width=400) 
     st.title('Conciliações dos Impostos')
-     st.image('tax.png', width=100) 
+    st.image('tax.png', width=100) 
  
 
 
@@ -86,6 +86,7 @@ st.markdown(
     "<p style='font-size:20px; font-weight:normal; color:#9B4DCC;'> 📎Esta página foi desenvolvida para proporcionar acesso rápido e facilitar a visualização das informações.</p>",
     unsafe_allow_html=True
 )
+
 
 
 
