@@ -152,7 +152,7 @@ for key in data_pis:
 df_pis = pd.DataFrame(data_pis)
 
 # Exibir no Streamlit
-st.markdown("#### 📊 Valor PIS")
+st.markdown("#### 📊")
 st.dataframe(df_pis.style.format({"VLR_PIS": "{:,.2f}"}))
 
 # TESTE
@@ -209,7 +209,7 @@ df = pd.DataFrame(data)
 
 
 
-st.subheader("📊 Devoluções com valor fiscal sem razão")
+st.subheader("📊")
 st.dataframe(df.style.format(precision=2))
 
 # ADD
