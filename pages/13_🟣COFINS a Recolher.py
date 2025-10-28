@@ -74,10 +74,10 @@ st.write("")
 
 
 st.markdown("---")
-
+st.markdown("<p style='font-size:18px; font-weight:bold; color:#FFA500;'>⚠️ Diferença no Item LB APONTADOR</p>", unsafe_allow_html=True)
 # Texto explicativo em Markdown
 st.markdown("""
-⚠️ Diferença no Item **LB APONTADOR**
+
 - **Razão (Nota Fiscal):** Não tributou
 - **Apuração:** Tributou normalmente
 """)
@@ -127,8 +127,8 @@ st.write("")
 
 st.markdown("---")
 # Texto explicativo em Markdown
+st.markdown("<p style='font-size:18px; font-weight:bold; color:#FFA500;'>⚠️ 77 Notas com valor fiscal sem razão </p>", unsafe_allow_html=True)
 st.markdown("""
-⚠️ 77 Notas com valor fiscal sem razão
 - **Razão (Nota Fiscal):** Sem tributação
 - **Apuração:** Tributado 
 """)
@@ -180,8 +180,8 @@ st.dataframe(df.style.format(precision=2))
 st.write("")
 st.write("")
 st.markdown("---")
+st.markdown("<p style='font-size:18px; font-weight:bold; color:#FFA500;'>⚠️ Diferença NF de serviço NF 000022686-002 </p>", unsafe_allow_html=True)
 st.markdown("""
- ⚠️ Diferença NF de serviço **NF 000022686-002**
 - **Razão:** Valor: **1,77**
 - **Prefeitura:** Não localizado
 """)
@@ -256,6 +256,7 @@ st.dataframe(df_comparativo.style.format({"Valor (R$)": "{:,.2f}"}))
 st.markdown("---")
 
 st.image("Screenshot_3.png", width=1600)
+
 
 
 
