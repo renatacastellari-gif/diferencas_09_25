@@ -16,10 +16,8 @@ Esta página apresenta as **demonstrações das conciliações entre o ICMS Difa
 """)
 
 st.markdown("<p style='font-size:28px; font-weight:bold; color:#FFA500;'>🔍 Ocorrência Identificada</p>", unsafe_allow_html=True)
-st.markdown(""" Valores lançados no razão com multa, **necessário reclassificar**.
 
-
-""")
+st.markdown(""" Valores lançados no razão com multa, **necessário reclassificar**. """)
 
 
 
@@ -59,4 +57,5 @@ st.markdown("""
 > **Objetivo:** Garantir que os saldos fiscais e contábeis estejam alinhados.
 
 """)
+
 
