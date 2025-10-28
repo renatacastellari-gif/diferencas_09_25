@@ -14,8 +14,9 @@ Esta página apresenta as **demonstrações das conciliações entre o ICMS Difa
 - **Fonte Contábil:** Conta 2300391 (ICMS a recolher) do razão extraída do SAP  
 
 """)
+st.markdown("---")
 
-st.markdown("<p style='font-size:28px; font-weight:bold; color:#FFA500;'>🔍 Ocorrência Identificada</p>", unsafe_allow_html=True)
+st.markdown("<p style='font-size:25px; font-weight:bold; color:#FFA500;'>🔍 Ocorrência Identificada</p>", unsafe_allow_html=True)
  
 
 
@@ -61,6 +62,7 @@ st.markdown("""
 > **Objetivo:** Garantir que os saldos fiscais e contábeis estejam alinhados.
 
 """)
+
 
 
 
