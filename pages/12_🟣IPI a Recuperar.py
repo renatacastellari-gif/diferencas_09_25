@@ -20,7 +20,7 @@ Esta página apresenta as demonstrações das conciliações entre o ICMS e o Ra
 
 # Diferença
 diferenca = 2033.84
-st.markdown("<h5>🔎 Diferença entre Fiscal e Contabilidade</h5>", unsafe_allow_html=True)
+st.markdown("<p style='font-size:25px; font-weight:bold; color:#FFA500;'>🔎 Diferença entre Fiscal e Contabilidade</p>", unsafe_allow_html=True)
 st.markdown(f"<p style='font-size:14px; color:#C0392B;'>⚠ Diferença: <b>R$ {diferenca:,.2f}</b></p>", unsafe_allow_html=True)
 
 ("""**`Filial 12, não há saldo devedor`** """)
@@ -60,3 +60,4 @@ df_fiscal = pd.DataFrame(data_fiscal)
 
 st.markdown("<p style='font-size:14px; font-weight:bold;'>📑 Fiscal</p>", unsafe_allow_html=True)
 st.dataframe(df_fiscal.style.format({"VLR_ICMS_FISCAL": "R$ {:.2f}"}))
+
