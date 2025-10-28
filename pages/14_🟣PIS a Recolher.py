@@ -91,7 +91,7 @@ st.write("")
 st.write("")
 
 st.markdown("---")
-st.markdown("<p style='font-size:20px; font-weight:bold; color:#FFA500;'>⚠️ 77 Notas com valor fiscal sem razão</p>", unsafe_allow_html=True)
+st.markdown("<p style='font-size:18px; font-weight:bold; color:#FFA500;'>⚠️ 77 Notas com valor fiscal sem razão</p>", unsafe_allow_html=True)
 # Texto explicativo em Markdown
 st.markdown("""
 
@@ -159,8 +159,9 @@ st.dataframe(df_pis.style.format({"VLR_PIS": "{:,.2f}"}))
 
 
 st.markdown("---")
+st.markdown("<p style='font-size:18px; font-weight:bold; color:#FFA500;'>⚠️ Diferença NF de serviço NF 000022686-002</p>", unsafe_allow_html=True)
 st.markdown("""
- ⚠️ Diferença NF de serviço **NF 000022686-002**
+ 
 - **Razão:** Valor: **0,38**
 - **Prefeitura:** Não localizado
 """)
