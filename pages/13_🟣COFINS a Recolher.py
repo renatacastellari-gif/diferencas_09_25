@@ -251,10 +251,7 @@ st.image("Screenshot_3.png", width=1600)
 
 
 
-st.markdown("---")
 
-# Exibir imagem com largura ajustada
-st.image("Screenshot_3.png", use_container_width=True)
 
 
 
