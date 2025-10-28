@@ -136,7 +136,7 @@ data_pis = {
 }
 
 # Criar DataFrame
-df_pis = pd.DataFrame(data_pis)
+
 
 # Exibir no Streamlit
 st.markdown("#### 📊 Valor PIS")
