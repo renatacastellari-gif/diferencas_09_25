@@ -5,6 +5,7 @@ import pandas as pd
 import io
 
 
+st.set_page_config(layout="wide")
 # Configuração da página
 st.set_page_config(page_title="COFINS", page_icon="🟣")
 
@@ -248,6 +249,7 @@ st.dataframe(df_comparativo.style.format({"Valor (R$)": "{:,.2f}"}))
 st.markdown("---")
 
 st.image("Screenshot_3.png", width=1600)
+
 
 
 
