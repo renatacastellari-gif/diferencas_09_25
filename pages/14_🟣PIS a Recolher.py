@@ -171,7 +171,7 @@ st.write("")
 st.markdown("---")
 
 st.markdown(
-    "<p style='font-size:22px; font-weight:bold; color:#9B4DCC;'> ↩️ DEVOLUÇÕES</p>",
+    "<p style='font-size:23px; font-weight:bold; color:#9B4DCC;'> ↩️ DEVOLUÇÕES</p>",
     unsafe_allow_html=True
 )
 # Texto explicativo em Markdown
@@ -217,7 +217,7 @@ st.dataframe(df.style.format(precision=2))
 st.markdown("---")
 
 st.markdown(
-    "<p style='font-size:22px; font-weight:bold; color:#9B4DCC;'> 📝 RESUMO</p>",
+    "<p style='font-size:23px; font-weight:bold; color:#9B4DCC;'> 📝 RESUMO</p>",
     unsafe_allow_html=True
 )
 
@@ -230,16 +230,20 @@ Já na apuração fiscal, aplica-se o abatimento do ICMS, reduzindo a base de c�
 
 
 # Seção 1: Comparativo Apuração vs Razão
+st.markdown(
+    "<p style='font-size:22px; font-weight:bold; color:#9B4DCC;'> ☑️ Comparativo Apuração vs Razão</p>",
+    unsafe_allow_html=True
+)
 st.markdown("### ✅ Comparativo Apuração vs Razão")
 
 dados_comparativo = {
     "Descrição": [
-        "Valor COFINS com abatimento do ICMS na base de cálculo (Apuração)",
+        "Valor PIS com abatimento do ICMS na base de cálculo (Apuração)",
         "(+) ICMS Próprio sobre as vendas (1,65% e 7,60%)",
         "(+) ICMS Próprio vendas Aliquota diferenciada (2,20% e 10,30%) Monofásico",
         "Valor Razão"
     ],
-    "Valor (R$)": [264792.91, 29258.75, 110.05, 294161.72]
+    "Valor (R$)": [57483.84, 6352.23, 23.51, 63859.58]
 }
 
 df_comparativo = pd.DataFrame(dados_comparativo)
@@ -247,7 +251,7 @@ st.dataframe(df_comparativo.style.format({"Valor (R$)": "{:,.2f}"}))
 
 st.markdown("---")
 
-st.image("Screenshot_3.png", width=1600)
+st.image("Screenshot_4.png", width=1600)
 
 
 
