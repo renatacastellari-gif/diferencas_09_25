@@ -234,7 +234,7 @@ st.markdown(
     "<p style='font-size:22px; font-weight:bold; color:#9B4DCC;'> ☑️ Comparativo Apuração vs Razão</p>",
     unsafe_allow_html=True
 )
-st.markdown("### ✅ Comparativo Apuração vs Razão")
+
 
 dados_comparativo = {
     "Descrição": [
