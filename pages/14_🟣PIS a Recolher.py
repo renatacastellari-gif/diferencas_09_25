@@ -1,19 +1,13 @@
-
-
 import streamlit as st
 import pandas as pd
-import io
-
-
 
 # Configuração da página
 st.set_page_config(page_title="PIS", page_icon="🟣")
 
-
 # Cabeçalho
 st.image('teste.svg', width=300)
 st.title('PIS')
-("""**`PIS a Recolher - 2300395`** """)
+st.markdown("**`PIS a Recolher - 2300395`**")
 
 st.markdown("""
 Esta página apresenta as demonstrações das conciliações do PIS a recolher.
@@ -22,46 +16,27 @@ Esta página apresenta as demonstrações das conciliações do PIS a recolher.
 - Fonte Fiscal: Apuração Fiscal
 - Fonte Contábil: Conta 2300395 do razão extraída do SAP
 """)
-st.write("")
-st.write("")
 
 st.markdown("---")
+st.markdown("⚠️ Diferença de valor")
 
-st.markdown("""
- ⚠️ Diferença de valor
-""")
-	
-
-
-# Dados extraídos da tabela fornecida
+# Dados iniciais
 data = {
     "referencia": ["000245555-004"],
     "NUM_DOCFIS": ["000246215"],
     "vlr_razão": [11.15],
     "vlr_fiscal": [11.41]
 }
-
-# Criar DataFrame
 df = pd.DataFrame(data)
 
-
-
-
-
-st.write("")
-st.write("")
-
-
 st.markdown("---")
-
-# Texto explicativo em Markdown
 st.markdown("""
 ⚠️ Diferença no Item **LB APONTADOR**
 - **Razão (Nota Fiscal):** Não tributou
 - **Apuração:** Tributou normalmente
 """)
 
-# Dados corretos extraídos da tabela
+# Dados detalhados
 data = {
     "referencia": [
         "000129567-015","000203701-002","000203468-002","000212587-003",
@@ -84,11 +59,10 @@ data = {
     "DESCRICAO_COMPL": ["LB APONTADOR DUO"]*9
 }
 
-# Criar DataFrame
 df = pd.DataFrame(data)
 
-# Adicionar coluna de diferença (Razão não tributou, então diferença = VLR_COFINS)
-df["Dif_PIS"] = df["VLR_PIS"]  # porque Razão = 0
+# Adicionar coluna de diferença (Razão não tributou, então diferença = VLR_PIS)
+df["Dif_PIS"] = df["VLR_PIS"]
 
 # Função para destacar diferença
 def highlight_dif(val):
@@ -96,8 +70,7 @@ def highlight_dif(val):
 
 # Exibir no Streamlit
 st.subheader("📊 Diferença de tributação (Razão vs Apuração)")
-st.dataframe(df.style.format(precision=2).applymap(highlight_dif, subset=['Dif_COFINS']))
-
+st.dataframe(df.style.format(precision=2).applymap(highlight_dif, subset=['Dif_PIS']))
 
 
 
