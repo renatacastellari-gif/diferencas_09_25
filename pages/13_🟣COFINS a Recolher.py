@@ -250,6 +250,23 @@ st.markdown("---")
 st.image("Screenshot_3.png", width=1600)
 
 
+st.markdown(
+    """
+    <style>
+    .wide-img img {
+        width: 100%;
+        max-width: 1600px;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+st.markdown('<div class="wide-img">Screenshot_3.png</div>', unsafe_allow_html=True
+
+
+
+
 
 
 
