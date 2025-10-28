@@ -171,7 +171,7 @@ st.write("")
 st.markdown("---")
 
 st.markdown(
-    "<p style='font-size:22px; font-weight:bold; color:#9B4DCC;'> DEVOLUÇÕES</p>",
+    "<p style='font-size:22px; font-weight:bold; color:#9B4DCC;'> ↩️ DEVOLUÇÕES</p>",
     unsafe_allow_html=True
 )
 # Texto explicativo em Markdown
@@ -216,7 +216,10 @@ st.dataframe(df.style.format(precision=2))
 
 st.markdown("---")
 
-st.markdown("<p style='font-size:28px; font-weight:bold; color:#FFA500;'>Resumo</p>", unsafe_allow_html=True)
+st.markdown(
+    "<p style='font-size:22px; font-weight:bold; color:#9B4DCC;'> 📝 RESUMO</p>",
+    unsafe_allow_html=True
+)
 
 # Texto explicativo
 st.markdown("""
