@@ -56,4 +56,4 @@ st.markdown(
 
 # Exibir imagem wide
 st.markdown('<div class="wide-img">Screenshot_3.png</div>', unsafe_allow_html=True)
-``
+
