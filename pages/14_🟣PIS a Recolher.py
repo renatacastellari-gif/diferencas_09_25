@@ -45,12 +45,6 @@ data = {
 df = pd.DataFrame(data)
 
 
-# Função para destacar diferença
-def highlight_dif(val):
-    return 'background-color: #9b59b6; color: white;' if val > 0 else ''
-
-# Exibir no Streamlit
-st.subheader("📊 Diferença de Tributação (Razão vs Apuração)")
 
 
 
