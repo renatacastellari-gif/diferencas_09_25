@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 import io
 
-st.set_page_config(layout="wide")
+
 
 # Configuração da página
 st.set_page_config(page_title="Resumo PIS COFINS", page_icon="🟣")
