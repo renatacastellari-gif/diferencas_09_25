@@ -41,8 +41,8 @@ st.dataframe(df.style.format({"vlr_razão": "{:,.2f}", "vlr_fiscal": "{:,.2f}"})
 
 
 st.markdown("---")
+st.markdown("<p style='font-size:20px; font-weight:bold; color:#FFA500;'>⚠️ Diferença no Item **LB APONTADOR*</p>", unsafe_allow_html=True)
 st.markdown("""
-⚠️ Diferença no Item **LB APONTADOR**
 - **Razão (Nota Fiscal):** Não tributou
 - **Apuração:** Tributou normalmente
 """)
@@ -89,14 +89,15 @@ st.write("")
 st.write("")
 
 st.markdown("---")
+st.markdown("<p style='font-size:20px; font-weight:bold; color:#FFA500;'>⚠️ 77 Notas com valor fiscal sem razão</p>", unsafe_allow_html=True)
 # Texto explicativo em Markdown
 st.markdown("""
-⚠️ 77 Notas com valor fiscal sem razão
+
 
 - **Razão (Nota Fiscal):** Sem tributação
 - **Apuração:** Tributado 
 """)
-st.markdown("<p style='font-size:20px; font-weight:bold; color:#FFA500;'>⚠️ 77 Notas com valor fiscal sem razão</p>", unsafe_allow_html=True)
+
 
 # TESTETE
 
