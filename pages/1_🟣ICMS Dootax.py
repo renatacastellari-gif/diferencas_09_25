@@ -11,10 +11,12 @@ Esta página apresenta as **demonstrações das conciliações entre o ICMS Difa
 
 ### 📌 Origem dos Dados
 - **Fonte Fiscal:** Planilha DOOTAX retirada do site Dootax (Filtro: Tipo de Tributo: ICMS)
-- **Fonte Contábil:** Conta 2300391 (ICMS a recolher) do razão extraída do SAP  """)
+- **Fonte Contábil:** Conta 2300391 (ICMS a recolher) do razão extraída do SAP  
+
+""")
 
 st.markdown("<p style='font-size:28px; font-weight:bold; color:#FFA500;'>🔍 Ocorrência Identificada</p>", unsafe_allow_html=True)
-(""" Valores lançados no razão com multa, **necessário reclassificar**.
+st.markdown(""" Valores lançados no razão com multa, **necessário reclassificar**.
 
 
 """)
@@ -57,3 +59,4 @@ st.markdown("""
 > **Objetivo:** Garantir que os saldos fiscais e contábeis estejam alinhados.
 
 """)
+
