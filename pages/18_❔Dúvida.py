@@ -24,7 +24,7 @@ st.markdown("""
 # Observação
 st.info("Por que algumas notas são consideradas no mês subsequente e outras não?")
 
-st.markdown(""")
+st.markdown("---")
 
 st.markdown(""" Nas operações de venda com CFOP 6.403, o ICMS-ST é recolhido antecipadamente. 
 No entanto, quando há devolução dessas mercadorias por meio do CFOP 2.411, e a empresa — como é o caso da Omnifile — não possui inscrição 
@@ -33,4 +33,5 @@ estadual no estado remetente, ela não pode se creditar do ICMS-ST destacado na 
 
 st.info("Diante disso, poderia nos confirmar se há intenção de solicitar a restituição desses valores de ICMS-ST junto ao estado de origem ou se
 devemos considerar esses valores como perda definitiva para fins de contabilização?")
+
 
