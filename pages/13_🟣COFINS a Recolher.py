@@ -116,7 +116,10 @@ def highlight_dif(val):
     return 'background-color: #9b59b6; color: white;' if val > 0 else ''
 
 # Exibir no Streamlit
-st.subheader("📊")
+st.markdown(
+    "<p style='font-size:18px; font-weight:bold; color:#9B4DCC;'> 📊</p>",
+    unsafe_allow_html=True
+)
 st.dataframe(df.style.format(precision=2).applymap(highlight_dif, subset=['Dif_COFINS']))
 
 
@@ -174,7 +177,10 @@ for key in data:
 df = pd.DataFrame(data)
 
 # Exibir tabela formatada (sem roxo)
-st.markdown("#### 📊 ")  # 4 hashtags = menor que subheader
+st.markdown(
+    "<p style='font-size:18px; font-weight:bold; color:#9B4DCC;'> 📊</p>",
+    unsafe_allow_html=True
+)
 st.dataframe(df.style.format(precision=2))
 
 st.write("")
@@ -227,7 +233,10 @@ data = {
 df = pd.DataFrame(data)
 
 # Exibir tabela formatada (sem roxo)
-st.subheader("📊")
+st.markdown(
+    "<p style='font-size:18px; font-weight:bold; color:#9B4DCC;'> 📊</p>",
+    unsafe_allow_html=True
+)
 st.dataframe(df.style.format(precision=2))
 
 # ADD
@@ -271,6 +280,7 @@ st.dataframe(df_comparativo.style.format({"Valor (R$)": "{:,.2f}"}))
 st.markdown("---")
 
 st.image("Screenshot_3.png", width=1600)
+
 
 
 
