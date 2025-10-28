@@ -20,14 +20,21 @@ Esta página apresenta as demonstrações das conciliações do PIS a recolher.
 st.markdown("---")
 st.markdown("⚠️ Diferença de valor")
 
-# Dados iniciais
+
+# Dados
 data = {
     "referencia": ["000245555-004"],
     "NUM_DOCFIS": ["000246215"],
     "vlr_razão": [11.15],
     "vlr_fiscal": [11.41]
 }
+
+# Converter para DataFrame
 df = pd.DataFrame(data)
+
+# Exibir no Streamlit
+st.dataframe(df.style.format({"vlr_razão": "{:,.2f}", "vlr_fiscal": "{:,.2f}"}))
+
 
 st.markdown("---")
 st.markdown("""
