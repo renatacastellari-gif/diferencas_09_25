@@ -200,6 +200,12 @@ data = {
 df = pd.DataFrame(data)
 
 # Exibir tabela formatada (sem roxo)
+
+st.markdown(
+    "<p style='font-size:18px; font-weight:bold; color:#6A1B9A;'>⚠️ DEVOLUÇÕES</p>",
+    unsafe_allow_html=True
+)
+
 st.subheader("📊 Devoluções com valor fiscal sem razão")
 st.dataframe(df.style.format(precision=2))
 
