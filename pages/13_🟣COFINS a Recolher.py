@@ -22,13 +22,15 @@ Esta página apresenta as demonstrações das conciliações do COFINS a recolhe
 - Fonte Fiscal: Apuração Fiscal
 - Fonte Contábil: Conta 2300394 do razão extraída do SAP
 """)
-st.write("")
-st.write("")
+
+
 
 st.markdown("---")
 
+st.markdown("<p style='font-size:28px; font-weight:bold; color:#FFA500;'>⚠️ Diferença no Item **BASE LIQ FACIAL UP FPS 15 SOFT HONEY</p>", unsafe_allow_html=True)
+
 st.markdown("""
- ⚠️ Diferença no Item **BASE LIQ FACIAL UP FPS 15 SOFT HONEY**
+ 
 - **Razão (Nota Fiscal):** Tributando em **7,60%**
 - **Apuração:** Tributando em **10,30%**
 """)
@@ -58,6 +60,11 @@ def highlight_dif(val):
     return 'background-color: #9b59b6; color: white;' if val > 0 else ''
 
 # Exibir no Streamlit
+
+st.markdown(
+    "<p style='font-size:18px; font-weight:bold; color:#9B4DCC;'> 📊Diferença de Tributação (Razão vs Apuração</p>",
+    unsafe_allow_html=True
+)
 st.subheader("📊 Diferença de Tributação (Razão vs Apuração)")
 st.dataframe(df.style.format(precision=2).applymap(highlight_dif, subset=['Dif_Alíquota']))
 
@@ -249,6 +256,7 @@ st.dataframe(df_comparativo.style.format({"Valor (R$)": "{:,.2f}"}))
 st.markdown("---")
 
 st.image("Screenshot_3.png", width=1600)
+
 
 
 
