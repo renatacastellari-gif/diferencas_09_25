@@ -82,7 +82,10 @@ def highlight_dif(val):
     return 'background-color: #9b59b6; color: white;' if val > 0 else ''
 
 # Exibir no Streamlit
-st.subheader("📊")
+st.markdown(
+    "<p style='font-size:18px; font-weight:bold; color:#9B4DCC;'> 📊</p>",
+    unsafe_allow_html=True
+)
 st.dataframe(df.style.format(precision=2).applymap(highlight_dif, subset=['Dif_PIS']))
 
 
@@ -152,7 +155,10 @@ for key in data_pis:
 df_pis = pd.DataFrame(data_pis)
 
 # Exibir no Streamlit
-st.markdown("#### 📊")
+st.markdown(
+    "<p style='font-size:18px; font-weight:bold; color:#9B4DCC;'> 📊</p>",
+    unsafe_allow_html=True
+)
 st.dataframe(df_pis.style.format({"VLR_PIS": "{:,.2f}"}))
 
 # TESTE
@@ -209,7 +215,10 @@ df = pd.DataFrame(data)
 
 
 
-st.subheader("📊")
+st.markdown(
+    "<p style='font-size:18px; font-weight:bold; color:#9B4DCC;'> 📊</p>",
+    unsafe_allow_html=True
+)
 st.dataframe(df.style.format(precision=2))
 
 # ADD
