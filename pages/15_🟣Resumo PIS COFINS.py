@@ -87,12 +87,9 @@ st.markdown("---")
 st.image("Screenshot_3.png", width=1600)
 
 
-# PIS
-
-st.markdown("---")
 
 
-st.markdown("---")
+
 
 
 
