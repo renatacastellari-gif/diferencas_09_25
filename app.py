@@ -47,7 +47,7 @@ else:
         ("COFINS a Recolher", "2300394"),
         ("PIS a Recolher", "2300395"),
         ("PIS a Recuperar", "1280343"),
-        ("COFINS a Recuperar", "12803434")
+        ("COFINS a Recuperar", "1280344")
     ]
 
     linhas_formatadas = [f"{nome:<25} {codigo:>10}" for nome, codigo in dados]
@@ -70,3 +70,4 @@ else:
 
     > **Objetivo:** Garantir o alinhamento entre os saldos fiscais e contábeis, prevenindo divergências nos registros.
     """)
+
