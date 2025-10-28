@@ -78,9 +78,10 @@ else:
 
 
 st.markdown(
-    "<p style='font-size:15px; font-weight:normal; color:#9B4DCC;'>Esta página foi criada para acesso ágil e visualização facilitada das diferenças e dos detalhes das conciliações.</p>",
+    "<p style='font-size:20px; font-weight:normal; color:#9B4DCC;'>Esta página foi criada para acesso ágil e visualização facilitada das diferenças e dos detalhes das conciliações.</p>",
     unsafe_allow_html=True
 )
+
 
 
 
