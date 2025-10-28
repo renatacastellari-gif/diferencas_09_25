@@ -32,7 +32,9 @@ No entanto, quando há devolução dessas mercadorias por meio do CFOP 2.411, e 
 
 # Segunda info
 st.info("""
-Diante disso, **departamento fiscal** precisa confirmar se há intenção de solicitar a restituição desses valores de ICMS-ST junto ao estado de origem ou se devemos considerar esses valores como perda definitiva para fins de contabilização?
+Diante disso, **departamento fiscal** precisa confirmar se há intenção de solicitar a restituição desses valores de ICMS-ST junto ao estado de origem ou se devemos considerar esses 
+valores como perda definitiva para fins de contabilização.
 """)
+
 
 
