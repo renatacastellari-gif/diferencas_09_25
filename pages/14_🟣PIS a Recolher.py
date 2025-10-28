@@ -82,7 +82,7 @@ def highlight_dif(val):
     return 'background-color: #9b59b6; color: white;' if val > 0 else ''
 
 # Exibir no Streamlit
-st.subheader("📊 Diferença de tributação (Razão vs Apuração)")
+st.subheader("📊")
 st.dataframe(df.style.format(precision=2).applymap(highlight_dif, subset=['Dif_PIS']))
 
 
