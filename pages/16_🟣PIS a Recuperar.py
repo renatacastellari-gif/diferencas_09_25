@@ -127,5 +127,10 @@ data = {
 df = pd.DataFrame(data)
 
 # Exibir tabela formatada
-st.markdown("#### Detalhamento diferença - Tributado Anteriormente (Monofásico)")
+# Texto da diferença
+st.markdown(
+    "<p style='font-size:15px; font-weight:bold; color:#9B4DCC;'>Detalhe diferença</p>",
+    unsafe_allow_html=True
+)
+
 st.dataframe(df.style.format({"VLR_PIS": "{:,.2f}", "VLR_BASE_PIS": "{:,.2f}"}))
