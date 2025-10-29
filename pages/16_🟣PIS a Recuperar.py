@@ -100,8 +100,10 @@ def highlight_dif(val):
     return 'background-color: #9b59b6; color: white;' if val > 0 else ''
 
 # Título estilizado
-st.markdown("<p style='font-size:18px; font-weight:bold; color:#6A1B9A;'>📊 Resumo PIS/COFINS</p>", unsafe_allow_html=True)
-
+st.markdown(
+    "<p style='font-size:18px; font-weight:bold; color:#FFA500;'>⚠️ Diferença do Valor pago vs Valor capa apuração</p>",
+    unsafe_allow_html=True
+)
 # Exibir tabela com destaque na coluna Diferença
 st.dataframe(
     df_resumo.style.format({
