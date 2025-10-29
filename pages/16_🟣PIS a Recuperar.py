@@ -129,7 +129,7 @@ df = pd.DataFrame(data)
 # Exibir tabela formatada
 # Texto da diferença
 st.markdown(
-    "<p style='font-size:15px; font-weight:bold; color:#9B4DCC;'>Detalhe diferença</p>",
+    "<p style='font-size:17px; font-weight:bold; color:#9B4DCC;'>Detalhe diferença:</p>",
     unsafe_allow_html=True
 )
 
