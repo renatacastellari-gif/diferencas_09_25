@@ -26,7 +26,7 @@ st.markdown("---")
 
 
 
-
+st.markdown("<p style='font-size:18px; font-weight:bold; color:#FFA500;'>⚠️ Diferença de Valor entre fiscal e contabilidade </p>", unsafe_allow_html=True)
 
 
 # Dados
@@ -46,7 +46,7 @@ st.dataframe(df.style.format({"vlr_razão": "{:,.2f}", "vlr_fiscal": "{:,.2f}"})
 
 
 st.markdown(
-    "<p style='font-size:18px; font-weight:bold; color:#FFA500;'>⚠️ Diferença de R$ 407,61</p>",
+    "<p style='font-size:18px; font-weight:bold; color::#FFA500;'> Diferença de R$ 407,61</p>",
     unsafe_allow_html=True
 )
 
