@@ -78,3 +78,36 @@ st.dataframe(
     df2.style.format({"VLR_RAZÃO": "{:,.2f}", "VLR_FISCAL": "{:,.2f}", "Dif_PIS": "{:,.2f}"})
        .applymap(highlight_dif, subset=["Dif_PIS"])
 )
+
+#ter
+
+# Nova tabela com resumo PIS/COFINS
+data_resumo = {
+    "Tributo": ["PIS", "COFINS"],
+    "Período": ["09/2025", "09/2025"],
+    "Vencimento": ["24/10/2025", "24/10/2025"],
+    "Valor Apuração": [19029.95, 89303.88],
+    "Valor Pago": [19885.13, 93307.68]
+}
+
+df_resumo = pd.DataFrame(data_resumo)
+
+# Adicionar coluna Diferença
+df_resumo["Diferença"] = df_resumo["Valor Pago"] - df_resumo["Valor Apuração"]
+
+# Função para destacar diferença positiva
+def highlight_dif(val):
+    return 'background-color: #9b59b6; color: white;' if val > 0 else ''
+
+# Título estilizado
+st.markdown("<p style='font-size:18px; font-weight:bold; color:#6A1B9A;'>📊 Resumo PIS/COFINS</p>", unsafe_allow_html=True)
+
+# Exibir tabela com destaque na coluna Diferença
+st.dataframe(
+    df_resumo.style.format({
+        "Valor Apuração": "{:,.2f}",
+        "Valor Pago": "{:,.2f}",
+        "Diferença": "{:,.2f}"
+    }).applymap(highlight_dif, subset=["Diferença"])
+)
+
