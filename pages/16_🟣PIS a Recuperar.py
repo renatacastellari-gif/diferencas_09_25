@@ -41,6 +41,7 @@ df = pd.DataFrame(data)
 # Exibir no Streamlit
 st.dataframe(df.style.format({"vlr_razão": "{:,.2f}", "vlr_fiscal": "{:,.2f}"}))
 
+st.markdown(f"<p style='font-size:14px; color:#C0392B;'>⚠ Diferença: <b>R$ {diferenca:,.2f}</b></p>", unsafe_allow_html=True)
 
 st.markdown("---")
 st.markdown("<p style='font-size:18px; font-weight:bold; color:#FFA500;'>⚠️ Diferença no Item LB APONTADOR</p>", unsafe_allow_html=True)
