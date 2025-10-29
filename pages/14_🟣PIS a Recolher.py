@@ -154,14 +154,10 @@ for key in data_pis:
 # Criar DataFrame
 df_pis = pd.DataFrame(data_pis)
 
-# Exibir no Streamlit
-st.markdown(
-    "<p style='font-size:18px; font-weight:bold; color:#9B4DCC;'> 📊</p>",
-    unsafe_allow_html=True
-)
+
 st.dataframe(df_pis.style.format({"VLR_PIS": "{:,.2f}"}))
 
-# TESTE
+
 
 
 st.markdown("---")
