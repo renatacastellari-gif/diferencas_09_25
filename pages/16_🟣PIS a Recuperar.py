@@ -29,8 +29,8 @@ st.markdown("<p style='font-size:18px; font-weight:bold; color:#FFA500;'>⚠️ 
 
 # Dados
 data = {
-    "referencia": ["000881877"],
-    "NUM_DOCFIS": ["000881877"],
+    "Nota_Fiscal": ["000881877"],
+    "RAZAO_SOCIAL": ["STILE COMERCIAL LTDA"],
     "vlr_razão": [12716.05],
     "vlr_fiscal": [12308.44]
 }
