@@ -112,4 +112,4 @@ st.dataframe(
         "Diferença": "{:,.2f}"
     }).applymap(highlight_dif, subset=["Diferença"])
 )
-st.markdown("<p style='font-size:28px; font-weight:bold; color:#FAFF70;'>O departamento Fiscal precisa analisar e corrigir, se necessário.</p>", unsafe_allow_html=True)
+st.markdown("<p style='font-size:18px; font-weight:bold; color:#FAFF70;'>O departamento fiscal precisa analisar e corrigir, se necessário.</p>", unsafe_allow_html=True)
