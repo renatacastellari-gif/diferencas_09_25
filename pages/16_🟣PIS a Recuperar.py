@@ -72,11 +72,7 @@ df2["Dif_PIS"] = df2["VLR_RAZÃO"] - df2["VLR_FISCAL"]
 def highlight_dif(val):
     return 'background-color: #9b59b6; color: white;' if val > 0 else ''
 
-# Exibir tabela com destaque
-st.markdown(
-    "<p style='font-size:18px; font-weight:bold; color:#9B4DCC;'>📊 Diferenças PIS</p>",
-    unsafe_allow_html=True
-)
+
 
 st.dataframe(
     df2.style.format({"VLR_RAZÃO": "{:,.2f}", "VLR_FISCAL": "{:,.2f}", "Dif_PIS": "{:,.2f}"})
