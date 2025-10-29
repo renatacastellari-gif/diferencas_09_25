@@ -22,7 +22,12 @@ Esta página apresenta as demonstrações das conciliações do PIS a recuperar.
 
 
 st.markdown("---")
-st.markdown("<p style='font-size:18px; font-weight:bold; color:#FFA500;'>⚠️ Diferença de valor</p>", unsafe_allow_html=True)
+
+st.markdown(
+    "<p style='font-size:18px; font-weight:bold; color:#FFA500;'>⚠️ Diferença de R$ 407,61</p>",
+    unsafe_allow_html=True
+)
+
 
 
 
