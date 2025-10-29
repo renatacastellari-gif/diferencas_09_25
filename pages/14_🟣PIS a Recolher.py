@@ -81,11 +81,7 @@ df["Dif_PIS"] = df["VLR_PIS"]
 def highlight_dif(val):
     return 'background-color: #9b59b6; color: white;' if val > 0 else ''
 
-# Exibir no Streamlit
-st.markdown(
-    "<p style='font-size:18px; font-weight:bold; color:#9B4DCC;'> 📊</p>",
-    unsafe_allow_html=True
-)
+
 st.dataframe(df.style.format(precision=2).applymap(highlight_dif, subset=['Dif_PIS']))
 
 
@@ -211,10 +207,7 @@ df = pd.DataFrame(data)
 
 
 
-st.markdown(
-    "<p style='font-size:18px; font-weight:bold; color:#9B4DCC;'> 📊</p>",
-    unsafe_allow_html=True
-)
+
 st.dataframe(df.style.format(precision=2))
 
 # ADD
