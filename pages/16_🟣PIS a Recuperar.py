@@ -71,21 +71,42 @@ data = {
     ]
 }
 
+import streamlit as st
+import pandas as pd
+
+# Dados
+data = {
+    "referencia": ["882192", "882191"],
+    "NUM_DOCFIS": [
+        "000129567","000203701","000203468","000212587",
+        "000245624","000246830","000389017","000389299","000390046"
+    ],
+    "VLR_RAZÃO": [8552.00, 1590.08],
+    "VLR_FISCAL": [8552.00, 0.00]
+}
+
+# Criar DataFrame
 df = pd.DataFrame(data)
 
-# Adicionar coluna de diferença (Razão não tributou, então diferença = VLR_PIS)
-df["Dif_PIS"] = df["VLR_PIS"]
+# Adicionar coluna de diferença
+df["Dif_PIS"] = df["VLR_RAZÃO"] - df["VLR_FISCAL"]
 
 # Função para destacar diferença
 def highlight_dif(val):
     return 'background-color: #9b59b6; color: white;' if val > 0 else ''
 
-# Exibir no Streamlit
+# Título estilizado
 st.markdown(
-    "<p style='font-size:18px; font-weight:bold; color:#9B4DCC;'> 📊</p>",
+    "<p style='font-size:18px; font-weight:bold; color:#9B4DCC;'>📊 Diferenças PIS</p>",
     unsafe_allow_html=True
 )
-st.dataframe(df.style.format(precision=2).applymap(highlight_dif, subset=['Dif_PIS']))
+
+# Exibir tabela com destaque
+st.dataframe(
+    df.style.format({"VLR_RAZÃO": "{:,.2f}", "VLR_FISCAL": "{:,.2f}", "Dif_PIS": "{:,.2f}"})
+      .applymap(highlight_dif, subset=["Dif_PIS"])
+)
+
 
 
 
