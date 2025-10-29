@@ -51,33 +51,24 @@ st.markdown(
 )
 
 st.markdown("---")
-st.markdown("<p style='font-size:18px; font-weight:bold; color:#FFA500;'>⚠️ Diferença no Item LB APONTADOR</p>", unsafe_allow_html=True)
+st.markdown("<p style='font-size:18px; font-weight:bold; color:#FFA500;'>⚠️ Diferença de Valor entre fiscal e contabilidade </p>", unsafe_allow_html=True)
 st.markdown("""
-- **Razão (Nota Fiscal):** Não tributou
-- **Apuração:** Tributou normalmente
+- No razão contábil, a NF 882191 foi registrada com valor de PIS de R$ 1.590,08, enquanto na apuração fiscal consta com alíquota zero, sem valor informado.
 """)
 
 # Dados detalhados
 data = {
     "referencia": [
-        "000129567-015","000203701-002","000203468-002","000212587-003",
-        "000245624-004","000246830-004","000389017-005","000389299-005","000390046-005"
+        "882192","882191"
     ],
     "NUM_DOCFIS": [
         "000129567","000203701","000203468","000212587",
         "000245624","000246830","000389017","000389299","000390046"
     ],
-    "VLR_PIS": [0.22,0.20,0.20,0.21,0.26,0.26,0.24,0.45,0.22],
-    "NUM_CONTROLE_DOCTO": [
-        "0001916255","0001924937","0001922090","0001919108",
-        "0001916696","0001922581","0001917137","0001919059","0001924521"
-    ],
-    "DATA_EMISSAO": [
-        "01/09/2025","26/09/2025","17/09/2025","08/09/2025",
-        "01/09/2025","18/09/2025","02/09/2025","08/09/2025","25/09/2025"
-    ],
-    "COD_PRODUTO": ["908920001BR"]*9,
-    "DESCRICAO_COMPL": ["LB APONTADOR DUO"]*9
+    "VLR_RAZÃO": [8552.00,1590.08],
+    "VLR_FISCAL": [
+        "8552.00","0.00"
+    ]
 }
 
 df = pd.DataFrame(data)
