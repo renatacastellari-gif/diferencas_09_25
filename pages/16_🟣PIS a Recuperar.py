@@ -79,7 +79,7 @@ st.dataframe(
        .applymap(highlight_dif, subset=["Dif_PIS"])
 )
 
-#ter
+st.markdown("---")
 
 # Nova tabela com resumo PIS/COFINS
 data_resumo = {
