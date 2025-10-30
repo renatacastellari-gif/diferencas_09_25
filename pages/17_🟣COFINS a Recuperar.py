@@ -41,9 +41,12 @@ st.dataframe(df.style.format({"vlr_razão": "{:,.2f}", "vlr_fiscal": "{:,.2f}"})
 
 # Texto da diferença
 st.markdown(
-    "<p style='font-size:15px; font-weight:bold; color:#9B4DCC;'>Diferença de R$ 1.889,53. Aliquota fiscal 9,65%, alíquota razão 7,60% </p>",
+    "<p style='font-size:15px; font-weight:bold; color:#9B4DCC;'>Diferença de R$ 1.889,53. </p>",
     unsafe_allow_html=True
 )
+
+st.markdown("**`Alíquota fiscal: 9,65%. Alíquota razão 7,60%`**")
+
 
 st.markdown("---")
 
