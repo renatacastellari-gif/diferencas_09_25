@@ -18,6 +18,11 @@ st.markdown("""
     margin-bottom:20px;">
 IPI
 </h2>
+
+IPI
+</h2>
+""", unsafe_allow_html=True)
+
 st.markdown("**`IPI a RECOLHER - 2300390`**")
 
 st.markdown("""
@@ -136,6 +141,7 @@ st.markdown(custom_css + html_table, unsafe_allow_html=True)
 total_ipi = df["VLR_IPI"].sum(skipna=True)
 
 st.markdown(f"<p style='font-size:13px;'>💰 Valor total IPI: <b>R$ {total_ipi:.2f}</b></p>", unsafe_allow_html=True)
+
 
 
 
