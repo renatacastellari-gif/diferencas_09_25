@@ -84,7 +84,17 @@ Conciliações dos Impostos
     - **Validação dos lançamentos contábeis**
     - **Identificação de ajustes necessários**
 
-   
+   </p>
+<div style="
+    background-color:#F5F5DC;
+    color:#333333;
+    padding:10px;
+    border-radius:6px;
+    margin-top:10px;">
+<strong>Status:</strong> Aguardando confirmação do departamento fiscal se há intenção de solicitar a restituição desses valores junto ao estado de origem ou se devemos considerar esses valores como perda definitiva para fins de contabilização.
+</div>
+</div>
+""", unsafe_allow_html=True)
 
 
     ✅ Navegue pelas abas para consultar as diferenças do mês.
@@ -95,6 +105,7 @@ Conciliações dos Impostos
    O objetivo do desenvolvimento dessa página é proporcionar acesso rápido e facilitar a visualização das informações.
 
     """)
+
 
 
 
