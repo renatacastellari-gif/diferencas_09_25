@@ -150,12 +150,12 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Dados detalhados
+# Dados detalhados corrigidos
 data2 = {
     "NF_FISCAL": ["881880", "881881"],
     "VLR_RAZÃO": [0.00, 49148.10],
     "VLR_FISCAL": [0.00, 49134.54],
-     "RAZAO_SOCIAL": ["STILE COMERCIAL LTDA"]
+    "RAZAO_SOCIAL": ["STILE COMERCIAL LTDA", "STILE COMERCIAL LTDA"]
 }
 
 df2 = pd.DataFrame(data2)
@@ -167,10 +167,8 @@ df2["Dif_COFINS"] = df2["VLR_RAZÃO"] - df2["VLR_FISCAL"]
 def highlight_dif(val):
     return 'background-color: #9b59b6; color: white;' if val > 0 else ''
 
-
-
+# Exibir tabela com formatação
 st.dataframe(
     df2.style.format({"VLR_RAZÃO": "{:,.2f}", "VLR_FISCAL": "{:,.2f}", "Dif_COFINS": "{:,.2f}"})
        .applymap(highlight_dif, subset=["Dif_COFINS"])
 )
-
