@@ -6,7 +6,18 @@ st.set_page_config(page_title="IPI", page_icon="🟣")
 
 # Cabeçalho
 st.image('teste.svg', width=300)
-st.title('IPI')
+# Título principal
+st.markdown("""
+<h2 style="
+    color:#9B4DCC;
+    font-family:'Montserrat',sans-serif;
+    font-weight:700;
+    text-align:center;
+    border-bottom:2px solid #FFA500;
+    padding-bottom:8px;
+    margin-bottom:20px;">
+IPI
+</h2>
 st.markdown("**`IPI a RECOLHER - 2300390`**")
 
 st.markdown("""
@@ -125,5 +136,6 @@ st.markdown(custom_css + html_table, unsafe_allow_html=True)
 total_ipi = df["VLR_IPI"].sum(skipna=True)
 
 st.markdown(f"<p style='font-size:13px;'>💰 Valor total IPI: <b>R$ {total_ipi:.2f}</b></p>", unsafe_allow_html=True)
+
 
 
