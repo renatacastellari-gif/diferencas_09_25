@@ -6,7 +6,19 @@ st.set_page_config(
 )
 
 st.image('teste.svg', width=300)
-st.title('Faturamento')
+# Título principal
+st.markdown("""
+<h2 style="
+    color:#9B4DCC;
+    font-family:'Montserrat',sans-serif;
+    font-weight:700;
+    text-align:center;
+    border-bottom:2px solid #FFA500;
+    padding-bottom:8px;
+    margin-bottom:20px;">
+Faturamento
+</h2>
+""", unsafe_allow_html=True)
 
 ("""**`Vendas - 4000000`** """)
 
@@ -37,6 +49,7 @@ As seguintes notas fiscais foram **removidas de agosto** e **incluídas em setem
 
 > **Objetivo:** Garantir que os saldos fiscais e contábeis estejam alinhados.
 """)
+
 
 
 
