@@ -16,7 +16,7 @@ st.markdown("""
     border-bottom:2px solid #FFA500;
     padding-bottom:8px;
     margin-bottom:20px;">
-Faturamento
+FATURAMENTO
 </h2>
 """, unsafe_allow_html=True)
 
@@ -49,6 +49,7 @@ As seguintes notas fiscais foram **removidas de agosto** e **incluídas em setem
 
 > **Objetivo:** Garantir que os saldos fiscais e contábeis estejam alinhados.
 """)
+
 
 
 
