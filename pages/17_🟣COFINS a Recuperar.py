@@ -118,24 +118,27 @@ st.dataframe(
 )
 st.markdown("<p style='font-size:18px; font-weight:bold; color:#FAFF70;'>O departamento fiscal precisa analisar e corrigir, se necessário.</p>", unsafe_allow_html=True)
 
-# TABELA
+#TABELA
 
-# Dados
+# Dados atualizados com VLR_COFINS
 data = {
     "NUM_DOCFIS": ["882192"] * 9 + [""],
-    "VLR_PIS": [228.96, 161.84, 72.57, 36.28, 25.44, 190.80, 12.09, 50.88, 76.32, 855.18],
+    "VLR_COFINS": [1071.95, 757.71, 339.76, 169.86, 119.11, 893.29, 56.60, 238.21, 357.32, 4003.80],
     "Base Conferencia (tipo de tributação)": ["Tributado Anteriormente (Monofásico)"] * 9 + [""],
-    "VLR_BASE_PIS": [6504.54, 4597.73, 2061.65, 1030.68, 722.73, 5420.45, 343.47, 1445.45, 2168.18, 24294.88]
+    "VLR_BASE_COFINS": [6504.54, 4597.73, 2061.65, 1030.68, 722.73, 5420.45, 343.47, 1445.45, 2168.18, 24294.88]
 }
 
 df = pd.DataFrame(data)
 
-# Exibir tabela formatada
-# Texto da diferença
+# Exibir título estilizado
 st.markdown(
     "<p style='font-size:17px; font-weight:bold; color:#9B4DCC;'>Detalhe diferença:</p>",
     unsafe_allow_html=True
 )
 
-st.dataframe(df.style.format({"VLR_PIS": "{:,.2f}", "VLR_BASE_PIS": "{:,.2f}"}))
+# Exibir tabela formatada
+st.dataframe(df.style.format({
+    "VLR_COFINS": "{:,.2f}",
+    "VLR_BASE_PIS": "{:,.2f}"
+}))
 
