@@ -7,7 +7,19 @@ st.set_page_config(page_title="IPI a Recuperar", page_icon="🟣")
 
 # Cabeçalho
 st.image('teste.svg', width=300)
-st.title('IPI a Recuperar')
+# Título principal
+st.markdown("""
+<h2 style="
+    color:#EEE4EF;
+    font-family:'Montserrat',sans-serif;
+    font-weight:700;
+    text-align:center;
+    border-bottom:2px solid #FFA500;
+    padding-bottom:8px;
+    margin-bottom:20px;">
+IPI
+</h2>
+""", unsafe_allow_html=True)
 ("""**`IPI a Recuperar - 1280342`** """)
 
 st.markdown("""
@@ -61,6 +73,7 @@ df_fiscal = pd.DataFrame(data_fiscal)
 
 st.markdown("<p style='font-size:14px; font-weight:bold;'>📑 Fiscal</p>", unsafe_allow_html=True)
 st.dataframe(df_fiscal.style.format({"VLR_ICMS_FISCAL": "R$ {:.2f}"}))
+
 
 
 
