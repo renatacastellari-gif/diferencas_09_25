@@ -139,3 +139,4 @@ st.markdown(f"<p style='font-size:13px;'>💰 Valor total IPI: <b>R$ {total_ipi:
 
 
 
+
