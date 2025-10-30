@@ -4,7 +4,20 @@ from io import BytesIO
 
 st.image('teste.svg', width=200) 
 # Título principal
-st.markdown("<h4>📌 Lançamentos Manuais - Contabilidade </h4>", unsafe_allow_html=True)
+# Título principal
+st.markdown("""
+<h2 style="
+    color:#EEE4EF;
+    font-family:'Montserrat',sans-serif;
+    font-weight:700;
+    text-align:center;
+    border-bottom:2px solid #FFA500;
+    padding-bottom:8px;
+    margin-bottom:20px;">
+💻Lançamentos Manuais - Contabilidade
+</h2>
+""", unsafe_allow_html=True)
+
 
 st.write("**`Competência: 09/2025`**")
 st.write("")
@@ -77,4 +90,5 @@ st.download_button(
     mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
 
 )
+
 
