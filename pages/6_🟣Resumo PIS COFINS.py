@@ -11,7 +11,19 @@ st.set_page_config(page_title="Resumo PIS COFINS", page_icon="🟣")
 
 # Cabeçalho
 st.image('teste.svg', width=300)
-st.title('RESUMO PIS COFINS')
+# Título principal
+st.markdown("""
+<h2 style="
+    color:#9B4DCC;
+    font-family:'Montserrat',sans-serif;
+    font-weight:700;
+    text-align:center;
+    border-bottom:2px solid #FFA500;
+    padding-bottom:8px;
+    margin-bottom:20px;">
+RESUMO PIS-COFINS
+</h2>
+""", unsafe_allow_html=True)
 ("""**`PIS 2300395`** """)
 ("""**`COFINS 2300394`** """)
 
