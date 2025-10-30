@@ -79,10 +79,11 @@ def highlight_dif(val):
 
 st.dataframe(
     df2.style.format({"VLR_RAZÃO": "{:,.2f}", "VLR_FISCAL": "{:,.2f}", "Dif_PIS": "{:,.2f}"})
-       .applymap(highlight_dif, subset=["Dif_PIS"])
+       .applymap(highlight_dif, subset=["Dif_COFINS"])
 )
 
 st.markdown("---")
+
 
 # Nova tabela com resumo PIS/COFINS
 data_resumo = {
