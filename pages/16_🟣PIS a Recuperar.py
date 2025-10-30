@@ -58,7 +58,6 @@ st.markdown("""
 # Dados detalhados
 data2 = {
     "referencia": ["882192", "882191"],
-    "NUM_DOCFIS": ["000129567", "000203701"],
     "VLR_RAZÃO": [8552.00, 1590.08],
     "VLR_FISCAL": [8552.00, 0.00]
 }
