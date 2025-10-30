@@ -9,7 +9,19 @@ st.set_page_config(page_title="ICMS Recuperar", page_icon="🟣")
 
 # Cabeçalho
 st.image('teste.svg', width=300)
-st.title('ICMS a Recuperar')
+# Título principal
+st.markdown("""
+<h2 style="
+    color:#EEE4EF;
+    font-family:'Montserrat',sans-serif;
+    font-weight:700;
+    text-align:center;
+    border-bottom:2px solid #FFA500;
+    padding-bottom:8px;
+    margin-bottom:20px;">
+ICMS
+</h2>
+""", unsafe_allow_html=True)
 ("""**`ICMS a Recuperar - 1280345`** """)
 
 st.markdown("""
@@ -71,6 +83,7 @@ def to_excel(df1, df2, df_razao, df_fiscal):
         df_razao.to_excel(writer, index=False, sheet_name='Razão')
         df_fiscal.to_excel(writer, index=False, sheet_name='Fiscal')
     return output.getvalue()
+
 
 
 
