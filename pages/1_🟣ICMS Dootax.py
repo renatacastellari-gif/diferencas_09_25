@@ -4,7 +4,19 @@ import pandas as pd
 st.set_page_config(page_title="ICMS DOOTAX", page_icon="🟣")
 
 st.image('teste.svg', width=300)
-st.title('ICMS DOOTAX')
+# Título principal
+st.markdown("""
+<h2 style="
+    color:#9B4DCC;
+    font-family:'Montserrat',sans-serif;
+    font-weight:700;
+    text-align:center;
+    border-bottom:2px solid #FFA500;
+    padding-bottom:8px;
+    margin-bottom:20px;">
+ICMS Dootax (Difal)
+</h2>
+""", unsafe_allow_html=True)
 ("""**`ICMS a RECOLHER - 2300391`** """)
 st.markdown("""
 Esta página apresenta as **demonstrações das conciliações entre o ICMS Difal (Dootax) e o Razão Contábil.**
@@ -62,6 +74,7 @@ st.markdown("""
 > **Objetivo:** Garantir que os saldos fiscais e contábeis estejam alinhados.
 
 """)
+
 
 
 
