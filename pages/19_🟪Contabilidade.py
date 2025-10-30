@@ -4,9 +4,9 @@ from io import BytesIO
 
 st.image('teste.svg', width=200) 
 # Título principal
-# Título principal
+
 st.markdown("""
-<h2 style="
+<h3 style="
     color:#EEE4EF;
     font-family:'Montserrat',sans-serif;
     font-weight:700;
@@ -15,7 +15,7 @@ st.markdown("""
     padding-bottom:8px;
     margin-bottom:20px;">
 💻Lançamentos Manuais - Contabilidade
-</h2>
+</h3>
 """, unsafe_allow_html=True)
 
 
@@ -89,6 +89,7 @@ st.download_button(
     mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
 
 )
+
 
 
 
