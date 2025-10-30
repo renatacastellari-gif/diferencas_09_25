@@ -78,15 +78,13 @@ else:
 
     ---
 
-    > **Objetivo:** Garantir o alinhamento entre os saldos fiscais e contábeis, prevenindo divergências nos registros.  
+    > **Objetivo:** Garantir o alinhamento entre os saldos fiscais e contábeis, prevenindo divergências nos registros.
+   O objetivo do desenvolvimento dessa página é proporcionar acesso rápido e facilitar a visualização das informações.
 
     """)
 
 
-st.markdown(
-    "<p style='font-size:20px; font-weight:normal; color:#9B4DCC;'> 📎Esta página foi desenvolvida para proporcionar acesso rápido e facilitar a visualização das informações.</p>",
-    unsafe_allow_html=True
-)
+
 
 
 
