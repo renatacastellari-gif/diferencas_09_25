@@ -20,7 +20,6 @@ st.markdown("""
 
 
 st.write("**`Competência: 09/2025`**")
-st.write("")
 st.write("`ICMS a recolher- 2300391`")
 # ------------------- TABELA 1 -------------------
 data1 = {
@@ -90,5 +89,6 @@ st.download_button(
     mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
 
 )
+
 
 
