@@ -155,6 +155,7 @@ data2 = {
     "NF_FISCAL": ["881880", "881881"],
     "VLR_RAZÃO": [0.00, 49148.10],
     "VLR_FISCAL": [0.00, 49134.54]
+     "RAZAO_SOCIAL": ["STILE COMERCIAL LTDA"],
 }
 
 df2 = pd.DataFrame(data2)
