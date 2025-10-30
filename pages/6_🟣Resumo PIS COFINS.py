@@ -21,7 +21,7 @@ st.markdown("""
     border-bottom:2px solid #FFA500;
     padding-bottom:8px;
     margin-bottom:20px;">
-Resumo - Apuração PIS e COFINS
+Resumo PIS-COFINS
 </h2>
 """, unsafe_allow_html=True)
 ("""**`PIS 2300395`** """)
@@ -31,7 +31,7 @@ Resumo - Apuração PIS e COFINS
 st.markdown("---")
 
 st.markdown(
-    "<p style='font-size:23px; font-weight:bold; color:#9B4DCC;'> 📝 RESUMO</p>",
+    "<p style='font-size:23px; font-weight:bold; color:#9B4DCC;'> 📝 Resumo da Apuração PIS e COFINS</p>",
     unsafe_allow_html=True
 )
 
