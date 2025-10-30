@@ -34,6 +34,19 @@ else:
     # 🔒 Conteúdo protegido
     st.image('teste.svg', width=400) 
     st.title('Conciliações dos Impostos')
+    # Título principal
+    st.markdown("""
+<h2 style="
+    color:#9B4DCC;
+    font-family:'Montserrat',sans-serif;
+    font-weight:700;
+    text-align:center;
+    border-bottom:2px solid #FFA500;
+    padding-bottom:8px;
+    margin-bottom:20px;">
+Conciliações dos Impostos
+</h2>
+""", unsafe_allow_html=True)
     
  
 
@@ -82,6 +95,7 @@ else:
    O objetivo do desenvolvimento dessa página é proporcionar acesso rápido e facilitar a visualização das informações.
 
     """)
+
 
 
 
