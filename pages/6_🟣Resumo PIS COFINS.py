@@ -31,7 +31,7 @@ Resumo PIS-COFINS
 st.markdown("---")
 
 st.markdown(
-    "<p style='font-size:23px; font-weight:bold; color:#9B4DCC;'> 📝 Resumo da Apuração PIS e COFINS</p>",
+    "<p style='font-size:23px; font-weight:bold; color:#9B4DCC;'> 📝 Apuração PIS-COFINS</p>",
     unsafe_allow_html=True
 )
 
