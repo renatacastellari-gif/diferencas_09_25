@@ -6,7 +6,7 @@ import io
 
 
 # Configuração da página
-st.set_page_config(page_title="Resumo PIS COFINS", page_icon="🟣")
+st.set_page_config(page_title="PIS COFINS", page_icon="🟣")
 
 
 # Cabeçalho
