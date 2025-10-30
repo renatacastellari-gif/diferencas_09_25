@@ -9,7 +9,19 @@ st.set_page_config(page_title="ICMS", page_icon="🟣")
 
 # Cabeçalho
 st.image('teste.svg', width=300)
-st.title('ICMS')
+# Título principal
+st.markdown("""
+<h2 style="
+    color:#9B4DCC;
+    font-family:'Montserrat',sans-serif;
+    font-weight:700;
+    text-align:center;
+    border-bottom:2px solid #FFA500;
+    padding-bottom:8px;
+    margin-bottom:20px;">
+ICMS
+</h2>
+""", unsafe_allow_html=True)
 ("""**`ICMS a RECOLHER - 2300391`** """)
 
 st.markdown("""
@@ -411,5 +423,6 @@ st.markdown("""
 ---
 > **Ação sugerida:** Validar se o DIFAL deve ser recolhido para essas notas.
 """)
+
 
 
