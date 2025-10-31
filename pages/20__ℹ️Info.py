@@ -11,21 +11,14 @@ st.info("""
 As capas e detalhes completos estão salvos na rede, incluindo meses anteriores.  
 Esta página tem por objetivo **facilitar a visualização das conciliações do mês 09/2025**.  
 
-📂 Caminho para acesso:  
-
-`Y:\DEPTO CONTÁBIL\BR02\CONCILIAÇÕES\Conciliações Renata`
-""")
-
 ("""
-
-
-As capas e detalhes completos estão salvos na rede, incluindo meses anteriores.  
-Esta página tem por objetivo **facilitar a visualização das conciliações do mês 09/2025**.  
+ 
 
 📂 Caminho para acesso:  
 
 `Y:\DEPTO CONTÁBIL\BR02\CONCILIAÇÕES\Conciliações Renata`
 
 """)
+
 
 
