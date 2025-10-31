@@ -1,5 +1,7 @@
 import streamlit as st
-st.image('teste.svg', width=200) 
+col1, col2, col3 = st.columns([1, 2, 1])
+with col2:
+    st.image("teste.svg", width=300)
 
 
 # Título principal
@@ -17,6 +19,7 @@ ICMS ST
 """, unsafe_allow_html=True)
 
 ("""**`Esta conta esta sendo conciliada pela colaboradora Gabriela. `** """)
+
 
 
 
