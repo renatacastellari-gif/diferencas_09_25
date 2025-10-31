@@ -61,19 +61,19 @@ with col2:
 
 # ====== TÍTULO ======
 st.markdown("""
-<h2 style="
+<h4 style="
     color:#9B4DCC;
     font-family:'Montserrat',sans-serif;
     font-weight:700;
     text-align:center;
-    border-bottom:2px solid #FFA500;
+    border-bottom:2px solid #DADDD8;
     padding-bottom:8px;
     margin-bottom:20px;">
     Tudo em um Só Lugar
-</h2>
+</h4>
 """, unsafe_allow_html=True)
 
-st.markdown("<div class='title'>Tudo em um Só Lugar</div>", unsafe_allow_html=True)
+
 
 # ====== BOX DE INFORMAÇÃO ======
 st.markdown("""
@@ -94,6 +94,7 @@ st.markdown("""
 Y:\\DEPTO CONTÁBIL\\BR02\\CONCILIAÇÕES\\Conciliações Renata
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
