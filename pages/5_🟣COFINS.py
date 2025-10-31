@@ -11,7 +11,9 @@ st.set_page_config(page_title="COFINS", page_icon="🟣")
 
 
 # Cabeçalho
-st.image('teste.svg', width=300)
+col1, col2, col3 = st.columns([1, 2, 1])
+with col2:
+    st.image("teste.svg", width=300)
 
 # Título principal com HTML
 st.markdown("""
@@ -279,6 +281,7 @@ st.dataframe(df_comparativo.style.format({"Valor (R$)": "{:,.2f}"}))
 st.markdown("---")
 
 st.image("Screenshot_3.png", width=1600)
+
 
 
 
