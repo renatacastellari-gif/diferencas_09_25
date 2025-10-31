@@ -59,6 +59,7 @@ col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
     st.image("teste.svg", width=320)
 
+st.write("") 
 # ====== TÍTULO ======
 st.markdown("""
 <h4 style="
@@ -94,6 +95,7 @@ st.markdown("""
 Y:\\DEPTO CONTÁBIL\\BR02\\CONCILIAÇÕES\\Conciliações Renata
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
