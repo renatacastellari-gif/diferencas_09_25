@@ -9,7 +9,7 @@ with col2:
 # Segunda info
 st.info("""
 As capas e detalhes completos estão salvos na rede, incluindo meses anteriores.  
-Esta página tem por objetivo **facilitar a visualização das conciliações do mês 09/2025**.  
+  O objetivo do desenvolvimento dessa página é proporcionar acesso rápido e facilitar a visualização das informações.""")
 
 ("""
  
@@ -19,6 +19,7 @@ Esta página tem por objetivo **facilitar a visualização das conciliações do
 `Y:\DEPTO CONTÁBIL\BR02\CONCILIAÇÕES\Conciliações Renata`
 
 """)
+
 
 
 
