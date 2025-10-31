@@ -8,7 +8,12 @@ st.set_page_config(page_title="ICMS Recuperar", page_icon="🟣")
 
 
 # Cabeçalho
-st.image('teste.svg', width=300)
+
+col1, col2, col3 = st.columns([1, 2, 1])
+with col2:
+    st.image("teste.svg", width=300)
+
+
 # Título principal
 st.markdown("""
 <h2 style="
@@ -83,6 +88,7 @@ def to_excel(df1, df2, df_razao, df_fiscal):
         df_razao.to_excel(writer, index=False, sheet_name='Razão')
         df_fiscal.to_excel(writer, index=False, sheet_name='Fiscal')
     return output.getvalue()
+
 
 
 
