@@ -7,7 +7,22 @@ with col2:
     st.image("teste.svg", width=300)
 
 # Título
-st.title("📌 Dúvidas")
+
+
+
+# Título principal
+st.markdown("""
+<h2 style="
+    color:#EEE4EF;
+    font-family:'Montserrat',sans-serif;
+    font-weight:700;
+    text-align:center;
+    border-bottom:2px solid #FFA500;
+    padding-bottom:8px;
+    margin-bottom:20px;">
+📌 Dúvidas"
+</h2>
+""", unsafe_allow_html=True)
 
 # Texto inicial
 st.markdown("""
@@ -39,6 +54,7 @@ st.info("""
 Diante disso, **departamento fiscal** precisa confirmar se há intenção de solicitar a restituição desses valores de ICMS-ST junto ao estado de origem ou se devemos considerar esses 
 valores como perda definitiva para fins de contabilização.
 """)
+
 
 
 
