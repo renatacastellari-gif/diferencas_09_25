@@ -5,7 +5,14 @@ st.set_page_config(
     page_icon="🟣",
 )
 
-st.image('teste.svg', width=300)
+st.markdown(
+    """
+    <div style="text-align: center;">
+        <img src="teste.svg" width="300">
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 # Título principal
 st.markdown("""
 <h2 style="
@@ -49,6 +56,7 @@ As seguintes notas fiscais foram **removidas de agosto** e **incluídas em setem
 
 > **Objetivo:** Garantir que os saldos fiscais e contábeis estejam alinhados.
 """)
+
 
 
 
