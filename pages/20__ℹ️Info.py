@@ -73,6 +73,8 @@ st.markdown("""
 </h2>
 """, unsafe_allow_html=True)
 
+st.markdown("<div class='title'>Central de Insights Contábeis</div>", unsafe_allow_html=True)
+
 # ====== BOX DE INFORMAÇÃO ======
 st.markdown("""
 <div class='info-box'>
@@ -92,6 +94,7 @@ st.markdown("""
 Y:\\DEPTO CONTÁBIL\\BR02\\CONCILIAÇÕES\\Conciliações Renata
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
