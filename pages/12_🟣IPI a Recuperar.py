@@ -6,7 +6,12 @@ from io import BytesIO
 st.set_page_config(page_title="IPI a Recuperar", page_icon="🟣")
 
 # Cabeçalho
-st.image('teste.svg', width=300)
+col1, col2, col3 = st.columns([1, 2, 1])
+with col2:
+    st.image("teste.svg", width=300)
+
+
+
 # Título principal
 st.markdown("""
 <h2 style="
@@ -73,6 +78,7 @@ df_fiscal = pd.DataFrame(data_fiscal)
 
 st.markdown("<p style='font-size:14px; font-weight:bold;'>📑 Fiscal</p>", unsafe_allow_html=True)
 st.dataframe(df_fiscal.style.format({"VLR_ICMS_FISCAL": "R$ {:.2f}"}))
+
 
 
 
