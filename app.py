@@ -32,7 +32,10 @@ if not st.session_state.logged_in:
             st.error("Senha incorreta.")
 else:
     # 🔒 Conteúdo protegido
-    st.image('teste.svg', width=400) 
+    
+    col1, col2, col3 = st.columns([1, 2, 1])
+with col2:
+    st.image("teste.svg", width=300)
     
     # Título principal
     st.markdown("""
@@ -94,6 +97,7 @@ Conciliações dos Impostos
    O objetivo do desenvolvimento dessa página é proporcionar acesso rápido e facilitar a visualização das informações.
 
     """)
+
 
 
 
