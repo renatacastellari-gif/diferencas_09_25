@@ -77,7 +77,7 @@ st.markdown("""
 st.markdown("""
 <div class='info-box'>
 As capas e detalhes completos estão salvos na rede, incluindo meses anteriores.  
-O objetivo desta página é proporcionar acesso rápido e facilitar a visualização das informações.
+**O objetivo desta página é proporcionar acesso rápido e facilitar a visualização das informações.**
 </div>
 """, unsafe_allow_html=True)
 st.write("") 
@@ -88,4 +88,5 @@ st.markdown("""
 Y:\\DEPTO CONTÁBIL\\BR02\\CONCILIAÇÕES\\Conciliações Renata
 </div>
 """, unsafe_allow_html=True)
+
 
