@@ -62,11 +62,11 @@ with col2:
 # ====== TÍTULO ======
 st.markdown("""
 <h4 style="
-    color:#9B4DCC;
+    color:#DADDD8;
     font-family:'Montserrat',sans-serif;
     font-weight:700;
     text-align:center;
-    border-bottom:2px solid #DADDD8;
+    border-bottom:2px solid #FFA500;
     padding-bottom:8px;
     margin-bottom:20px;">
     Tudo em um Só Lugar
@@ -94,6 +94,7 @@ st.markdown("""
 Y:\\DEPTO CONTÁBIL\\BR02\\CONCILIAÇÕES\\Conciliações Renata
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
