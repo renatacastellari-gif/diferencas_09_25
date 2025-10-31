@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="CONCILIAÇÕES", page_icon="🟪")
+st.set_page_config(page_title="Dúvidas", page_icon="🟪")
 
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
@@ -54,6 +54,7 @@ st.info("""
 Diante disso, **departamento fiscal** precisa confirmar se há intenção de solicitar a restituição desses valores de ICMS-ST junto ao estado de origem ou se devemos considerar esses 
 valores como perda definitiva para fins de contabilização.
 """)
+
 
 
 
