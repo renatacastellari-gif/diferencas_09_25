@@ -15,7 +15,7 @@ st.markdown("""
     border-bottom:2px solid #FFA500;
     padding-bottom:8px;
     margin-bottom:20px;">
-    ℹ️
+    
 </h2>
 """, unsafe_allow_html=True)
 
@@ -30,4 +30,5 @@ st.markdown("""
 📂 **Caminho para acesso:**  
 `Y:\\DEPTO CONTÁBIL\\BR02\\CONCILIAÇÕES\\Conciliações Renata`
 """)
+
 
