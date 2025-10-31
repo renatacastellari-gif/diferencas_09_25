@@ -5,6 +5,19 @@ with col2:
     st.image("teste.svg", width=300)
 
 
+# Título principal
+st.markdown("""
+<h2 style="
+    color:#9B4DCC;
+    font-family:'Montserrat',sans-serif;
+    font-weight:700;
+    text-align:center;
+    border-bottom:2px solid #FFA500;
+    padding-bottom:8px;
+    margin-bottom:20px;">
+</h2>
+
+
 
 # Segunda info
 st.info("""
@@ -19,6 +32,7 @@ As capas e detalhes completos estão salvos na rede, incluindo meses anteriores.
 `Y:\DEPTO CONTÁBIL\BR02\CONCILIAÇÕES\Conciliações Renata`
 
 """)
+
 
 
 
