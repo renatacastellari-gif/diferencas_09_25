@@ -76,10 +76,14 @@ st.markdown("""
 # ====== BOX DE INFORMAÇÃO ======
 st.markdown("""
 <div class='info-box'>
-As capas e detalhes completos estão salvos na rede, incluindo meses anteriores.  
-**O objetivo desta página é proporcionar acesso rápido e facilitar a visualização das informações.**
+As capas e detalhes completos estão salvos na rede, incluindo meses anteriores.<br>
+<span style="color:#FFA500; font-weight:600;">
+O objetivo desta página é proporcionar acesso rápido e facilitar a visualização das informações.
+</span>
 </div>
 """, unsafe_allow_html=True)
+
+st.write("") 
 st.write("") 
 # ====== CAMINHO ======
 st.markdown("""
@@ -88,5 +92,6 @@ st.markdown("""
 Y:\\DEPTO CONTÁBIL\\BR02\\CONCILIAÇÕES\\Conciliações Renata
 </div>
 """, unsafe_allow_html=True)
+
 
 
