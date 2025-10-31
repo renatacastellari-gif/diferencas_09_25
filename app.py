@@ -33,8 +33,7 @@ if not st.session_state.logged_in:
 else:
     # 🔒 Conteúdo protegido
     
-    col1, col2, col3 = st.columns([1, 2, 1])
-with col2:
+
     st.image("teste.svg", width=300)
     
     # Título principal
@@ -97,6 +96,7 @@ Conciliações dos Impostos
    O objetivo do desenvolvimento dessa página é proporcionar acesso rápido e facilitar a visualização das informações.
 
     """)
+
 
 
 
