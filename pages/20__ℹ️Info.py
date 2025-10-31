@@ -5,6 +5,7 @@ with col2:
     st.image("teste.svg", width=300)
 
 
+
 # Título principal
 st.markdown("""
 <h2 style="
@@ -15,7 +16,7 @@ st.markdown("""
     border-bottom:2px solid #FFA500;
     padding-bottom:8px;
     margin-bottom:20px;">
-ℹ️
+Informações Adicionais
 </h2> """)
 
 
@@ -33,6 +34,7 @@ As capas e detalhes completos estão salvos na rede, incluindo meses anteriores.
 `Y:\DEPTO CONTÁBIL\BR02\CONCILIAÇÕES\Conciliações Renata`
 
 """)
+
 
 
 
