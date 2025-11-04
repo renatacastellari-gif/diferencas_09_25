@@ -80,8 +80,8 @@ st.markdown("""
 st.markdown("""
 <div class='info-box'>
 <span style="color:#FFA500; font-weight:600;"> 
-As capas e detalhes completos estão salvos na rede, incluindo meses anteriores.<br>
-O objetivo desta página é proporcionar acesso rápido e facilitar a visualização das informações.
+O objetivo desta página é proporcionar acesso rápido e facilitar a visualização das informações.<br>
+As capas e detalhes completos estão salvos na rede, incluindo meses anteriores
 </span>
 </div>
 """, unsafe_allow_html=True)
@@ -95,6 +95,7 @@ st.markdown("""
 Y:\\DEPTO CONTÁBIL\\BR02\\CONCILIAÇÕES\\Conciliações Renata
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
