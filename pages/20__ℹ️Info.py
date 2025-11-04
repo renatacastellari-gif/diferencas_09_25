@@ -90,11 +90,12 @@ st.write("")
 st.write("") 
 # ====== CAMINHO ======
 st.markdown("""
-<p class="folder">📁 <b>Caminho para acesso:</b></p>
+<p class="folder">📁 <b>Caminho para acesso na rede:</b></p>
 <div class='path-box'>
 Y:\\DEPTO CONTÁBIL\\BR02\\CONCILIAÇÕES\\Conciliações Renata
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
