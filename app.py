@@ -92,10 +92,11 @@ Conciliações dos Impostos
 
     ---
 
-    > **Objetivo:** Garantir o alinhamento entre os saldos fiscais e contábeis, prevenindo divergências nos registros.
-   O objetivo do desenvolvimento dessa página é proporcionar acesso rápido e facilitar a visualização das informações.
+    > **Objetivo:** Garantir o alinhamento entre os saldos fiscais e contábeis, prevenindo divergências nos registros.<br>
+  Desenvolvemos essa página para proporcionar acesso rápido e facilidade na visualização das conciliações.
 
     """)
+
 
 
 
